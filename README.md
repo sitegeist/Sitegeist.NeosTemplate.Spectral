@@ -1,6 +1,6 @@
 # Sitegeist.NeosTemplate.Spectral
 
-A Neos Integration if the free HTML5UP Template "Spectral"
+A Neos Integration of the free HTML5UP Template "Spectral"
 
 ### Authors & Sponsors
 
