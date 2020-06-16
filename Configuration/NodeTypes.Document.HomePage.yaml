@@ -10,6 +10,10 @@
         footer:
           label: Footer Data
           icon: glass-whiskey
+        style:
+          label: Style
+          icon: paint-brush
+
       groups:
         siteInfo:
           label: 'Site Info'
@@ -18,6 +22,10 @@
           tab: footer
           label: Social channels
           icon: share-alt
+        styleColor:
+          tab: style
+          icon: paint-brush
+          label: Colors
 
   properties:
     logo_title:
@@ -67,3 +75,10 @@
           group: social
           editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
 
+    colorFontLight:
+      type: string
+      ui:
+        label: 'Font light color'
+        reloadIfChanged: true
+        inspector:
+          group: styleColor
