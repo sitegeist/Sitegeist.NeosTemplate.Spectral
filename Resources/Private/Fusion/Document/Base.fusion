@@ -8,21 +8,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Base) < prototype(Neos.Fusion
             metaViewport = '<meta name="viewport" content="width=device-width">'
             stylesheets = Neos.Fusion:Join {
 
-                vars = Neos.Fusion:Component  {
-
-                    variables = Neos.Fusion:DataStructure {
-                        color-font-light = ${q(site).property('colorFontLight')}
-                        color-font-light.@if.isset =  ${q(site).property('colorFontLight')}
-                    }
-
-                    renderer = Neos.Fusion:Loop {
-                        items = ${props.variables}
-                        itemName = "value"
-                        itemKey = "var"
-                        itemRenderer = ${'--' + var + ':' + value + ';'}
-                        @process.wrap = ${'<style> :root{ ' + value + ' } </style>'}
-                    }
-                }
+                cssVariables = Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables
 
                 main = Neos.Fusion:Tag {
                     tagName = 'link'

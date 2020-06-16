@@ -1,0 +1,15 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prototype(Neos.Fusion:Component) {
+
+    variables = Neos.Fusion:DataStructure {
+        color-font-light = ${q(site).property('colorFontLight')}
+        color-font-light.@if.isset =  ${q(site).property('colorFontLight')}
+    }
+
+    renderer = Neos.Fusion:Loop {
+        items = ${props.variables}
+        itemName = "value"
+        itemKey = "var"
+        itemRenderer = ${'--' + var + ':' + value + ';'}
+        @process.wrap = ${'<style> :root{ ' + value + ' } </style>'}
+    }
+}
