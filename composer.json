@@ -1,6 +1,7 @@
 {
     "description": "Neos Integration of the HTML5UP Template 'Spectral' ",
     "type": "neos-site",
+    "license": "GPL-3.0+",
     "require": {
         "neos/neos": "*",
         "neos/nodetypes": "*",
