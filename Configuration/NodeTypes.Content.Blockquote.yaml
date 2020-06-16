@@ -1,0 +1,11 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Blockquote':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+
+  ui:
+    label: 'Blockquote'
+    icon: quote-right
+

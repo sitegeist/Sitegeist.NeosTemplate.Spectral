@@ -1,0 +1,28 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Heading) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+        block = false
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = false
+    }
+
+    isMajor= ${q(node).property('isMajor')}
+
+    headingLevel = ${q(node).property('headingLevel')}
+
+    renderer = afx`
+        <header class="major" class.@if.isMajorHeading={props.isMajor}>
+            <Neos.Fusion:Tag
+                tagName={props.headingLevel}
+            >
+                {props.title}
+            </Neos.Fusion:Tag>
+
+            <p @if.isset={!String.isBlank(props.text)}>{props.text}</p>
+        </header>
+    `
+}
+

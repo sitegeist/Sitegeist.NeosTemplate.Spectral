@@ -1,0 +1,38 @@
+'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Image':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        media:
+          label: 'Media'
+          icon: icon-image
+
+  properties:
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Image'
+        reloadIfChanged: true
+        inspector:
+          group: media
+          editor: 'Neos.Neos/Inspector/Editors/ImageEditor'
+          editorOptions:
+            crop: true
+
+    imageAlternativeText:
+      type: string
+      ui:
+        label: 'Image Alt Text'
+        reloadIfChanged: true
+        inspector:
+          group: media
+
+    imageTitle:
+      type: string
+      ui:
+        label: Image Title Text
+        reloadIfChanged: true
+        inspector:
+          group: 'image'
+          position: 150
+

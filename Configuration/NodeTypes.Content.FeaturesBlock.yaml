@@ -1,0 +1,22 @@
+'Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+    'Neos.Neos:ContentCollection': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature': true
+
+  ui:
+    label: 'Feature Block'
+    icon: dice-six
+
+  options:
+    template:
+      childNodes:
+        teaser1:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature'
+        teaser2:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature'

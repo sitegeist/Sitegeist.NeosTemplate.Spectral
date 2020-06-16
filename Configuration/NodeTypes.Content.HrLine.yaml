@@ -1,0 +1,8 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Separator':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+
+  ui:
+    label: 'Separator'
+    icon: window-minimize

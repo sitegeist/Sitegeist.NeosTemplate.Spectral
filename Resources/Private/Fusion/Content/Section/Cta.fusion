@@ -1,0 +1,33 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Cta) < prototype(Neos.Neos:ContentComponent) {
+
+    style = ${q(node).property('style')}
+
+    title = Neos.Neos:Editable {
+        property = 'title'
+        block = false
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = false
+    }
+
+    buttons = Neos.Neos:ContentCollectionRenderer {
+        nodePath = "."
+    }
+
+
+    renderer = afx`
+        <section class={'cta wrapper ' + props.style}>
+            <div class="inner">
+                <header>
+                    <h2>{props.title}</h2>
+                    <p>{props.text}</p>
+                </header>
+                <ul class="actions stacked">
+                    {props.buttons}
+                </ul>
+            </div>
+        </section>
+    `
+}

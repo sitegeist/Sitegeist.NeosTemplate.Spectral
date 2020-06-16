@@ -1,0 +1,14 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.Page) < prototype(Neos.Fusion:Component) {
+
+    renderer = Sitegeist.NeosTemplate.Spectral:Document.Base {
+        content = afx`
+            <div id="page-wrapper">
+                <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Header />
+                <Neos.Neos:ContentCollection tagName="article" attributes.id="main" nodePath="main" />
+            </div>
+            <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Footer />
+            <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Menu />
+
+        `
+    }
+}

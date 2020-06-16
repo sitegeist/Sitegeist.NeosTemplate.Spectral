@@ -1,0 +1,8 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock) < prototype(Neos.Neos:ContentComponent) {
+
+    renderer = afx`
+        <ul class="features">
+            <Neos.Neos:ContentCollectionRenderer nodePath="." />
+        </ul>
+    `
+}

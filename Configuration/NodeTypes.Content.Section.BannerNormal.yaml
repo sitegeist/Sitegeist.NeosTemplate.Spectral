@@ -1,0 +1,35 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Section.BannerNormal':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Neos.Neos:ContentCollection': true
+    'Flownative.Anchorlinks:AnchorMixin': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sitegeist.NeosTemplate.Spectral:Content.Button' : true
+
+  ui:
+    label: 'Banner Section'
+    icon: eye
+    position : 10
+    inspector:
+      groups:
+        identifier:
+          label: 'Identifier'
+        style:
+          label: 'Appearance'
+
+  properties:
+    background:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: "Background Image"
+        reloadIfChanged: true
+        inspector:
+          group: style
+          editor: 'Neos.Neos/Inspector/Editors/ImageEditor'
+

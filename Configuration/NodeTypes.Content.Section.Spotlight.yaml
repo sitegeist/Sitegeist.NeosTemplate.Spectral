@@ -1,0 +1,52 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
+    'Neos.Neos:ContentCollection': true
+    'Flownative.Anchorlinks:AnchorMixin': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item': true
+
+  ui:
+    label: 'Spotlight Section'
+    icon: braille
+    inspector:
+      groups:
+        identifier:
+          label: 'Identifier'
+        styles:
+          label: 'Appearance'
+
+  properties:
+
+    style:
+      type: string
+      ui:
+        label: 'style'
+        reloadIfChanged: true
+        inspector:
+          group: styles
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              style1:
+                label: 'style1'
+              style2:
+                label: 'style2'
+              style3:
+                label: 'style3'
+              style4:
+                label: 'style4'
+              style5:
+                label: 'style5'
+  options:
+    template:
+      childNodes:
+        spotlightItem1:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item'
+        spotlightItem2:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item'

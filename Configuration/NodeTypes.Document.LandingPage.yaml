@@ -1,0 +1,25 @@
+'Sitegeist.NeosTemplate.Spectral:Document.LandingPage':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Document': true
+
+  ui:
+    icon: file
+    label: Landing Page
+    inspector:
+      groups:
+        style:
+          label: "Style"
+
+  childNodes:
+    main:
+      type: 'Sitegeist.NeosTemplate.Spectral:Collection.Content.Landing'
+
+  properties:
+    background:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: "Background Image"
+        reloadIfChanged: true
+        inspector:
+          group: style
+          editor: 'Neos.Neos/Inspector/Editors/ImageEditor'

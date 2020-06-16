@@ -1,0 +1,28 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.ImageGallery) < prototype(Neos.Neos:ContentComponent) {
+    imageSources = Neos.Fusion:Map {
+        items = ${q(node).property('imageList')}
+        itemName = 'asset'
+        itemRenderer = Neos.Fusion:DataStructure {
+            src = Neos.Neos:ImageUri {
+                asset = ${asset}
+                @if.isImage = ${String.startsWith(asset.mediaType, 'image')}
+            }
+        }
+    }
+
+    renderer = afx`
+        <section>
+            <div class="box alt">
+                <div class="row gtr-50 gtr-uniform">
+                    <Neos.Fusion:Loop items={props.imageSources} @children="itemRenderer">
+                        <div class="col-4" @if.hasSrc={item.src}>
+                            <span class="image fit">
+                                <img src={item.src}/>
+                            </span>
+                        </div>
+                    </Neos.Fusion:Loop>
+                </div>
+            </div>
+        </section>
+    `
+}

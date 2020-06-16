@@ -1,0 +1,8 @@
+'Sitegeist.NeosTemplate.Spectral:Document.Shortcut':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Document': true
+    'Neos.Neos:Shortcut': true
+
+  ui:
+    icon: icon-link
+    label: Shortcut

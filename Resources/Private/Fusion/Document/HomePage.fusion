@@ -1,0 +1,2 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.HomePage) < prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage)
+

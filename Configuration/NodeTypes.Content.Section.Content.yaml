@@ -1,0 +1,58 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Section.Content':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
+    'Flownative.Anchorlinks:AnchorMixin': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+
+  ui:
+    label: 'Content Section'
+    icon: sign
+
+    inspector:
+      groups:
+        styles:
+          label: 'Appearance'
+
+  properties:
+
+    centerAligned:
+      type: boolean
+      ui:
+        label: 'Align center'
+        reloadIfChanged: true
+        inspector:
+          group: styles
+
+    style:
+      type: string
+      ui:
+        label: 'style'
+        reloadIfChanged: true
+        inspector:
+          group: styles
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              style1:
+                label: 'style1'
+              style2:
+                label: 'style2'
+              style3:
+                label: 'style3'
+              style4:
+                label: 'style4'
+              style5:
+                label: 'style5'
+  options:
+    template:
+      childNodes:
+        heading:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.Heading'
+        body:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.Text'

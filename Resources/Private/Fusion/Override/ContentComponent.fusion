@@ -1,0 +1,3 @@
+prototype(Neos.Neos:ContentComponent) {
+    @process.prependAnchor = Flownative.Anchorlinks:AnchorWrapper
+}

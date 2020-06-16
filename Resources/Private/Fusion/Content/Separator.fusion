@@ -1,0 +1,6 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Separator) < prototype(Neos.Neos:ContentComponent) {
+
+    renderer = afx`
+       <hr/>
+    `
+}

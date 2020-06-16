@@ -1,0 +1,71 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Menu) < prototype(Neos.Fusion:Component) {
+
+    menuItems = Neos.Fusion:Map {
+        items = Neos.Neos:MenuItems
+        itemRenderer = Neos.Fusion:DataStructure {
+            label = ${item.label}
+            href = Neos.Neos:NodeUri {
+                node = ${item.node}
+            }
+            items = Neos.Fusion:Map {
+                items = ${item.subItems}
+                itemName = 'childItem'
+                itemRenderer = Neos.Fusion:DataStructure {
+                    label = ${childItem.label}
+                    href = Neos.Neos:NodeUri {
+                        node = ${childItem.node}
+                    }
+                }
+            }
+        }
+    }
+
+    languageSelector = Neos.Fusion:DataStructure {
+        currentLanguage = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language.presets.' + Array.first(node.context.dimensions.language) + '.label')}
+        items = Neos.Fusion:Map {
+            items = Neos.Neos:DimensionsMenuItems {
+                dimension = 'language'
+            }
+            itemRenderer = Neos.Fusion:DataStructure {
+                href = Neos.Neos:NodeUri {
+                    node = ${item.node}
+                    node.@process.addFallbackToSiteNode {
+                        @if.hasNoTranslation = ${!item.node}
+                        expression = ${q(site).context({'dimensions': { 'language': item.dimensions.language}, 'targetDimensions': {'language': item.targetDimensions.language.value}}).get(0)}
+                    }
+                }
+                label = ${item.label}
+                isActive = ${item.state == 'current' ? true : false}
+            }
+        }
+    }
+
+    renderer = afx`
+        <div id="menu">
+            <ul class="language-navi">
+                <Neos.Fusion:Loop items={props.languageSelector.items} @children="itemRenderer">
+                    <li>
+                        <Neos.Fusion:Tag
+                            tagName={item.isActive ? 'span' : 'a'}
+                        attributes.href={item.href}
+                        attributes.href.@if.isInactive={!item.isActive}
+                        >
+                        {item.label}
+                        </Neos.Fusion:Tag>
+                    </li>
+                </Neos.Fusion:Loop>
+            </ul>
+
+            <ul>
+                <Neos.Fusion:Loop items={props.menuItems} @children="itemRenderer">
+                    <li>
+                        <a href={item.href}>
+                            {item.label}
+                        </a>
+                    </li>
+                </Neos.Fusion:Loop>
+            </ul>
+        </div>
+    `
+}
+

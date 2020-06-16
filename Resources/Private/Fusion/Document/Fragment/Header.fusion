@@ -1,0 +1,27 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Header) < prototype(Neos.Fusion:Component) {
+    logo = Neos.Fusion:DataStructure {
+        title = ${q(site).property('logo_title')}
+        href = Neos.Neos:NodeUri {
+            node = ${site}
+        }
+    }
+    isHomepage = ${documentNode == site}
+
+    renderer = afx`
+        <header id="header" class={props.isHomepage ? "alt" : ""}>
+            <h1>
+                <a href={props.logo.href}>{props.logo.title}</a>
+            </h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a class="menuToggle" href="#menu">
+                            <span>Menu</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    `
+}

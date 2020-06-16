@@ -1,0 +1,11 @@
+'Sitegeist.NeosTemplate.Spectral:Document':
+  abstract: true
+  superTypes:
+    'Neos.Neos:Document': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Neos:Document': false
+      'Sitegeist.NeosTemplate.Spectral:Constraint.Document.Restricted': false
+      'Sitegeist.NeosTemplate.Spectral:Document': true

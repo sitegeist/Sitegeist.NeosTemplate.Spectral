@@ -1,0 +1,17 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Blockquote) < prototype(Neos.Neos:ContentComponent) {
+    title = Neos.Neos:Editable {
+        property = 'title'
+        block = false
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = false
+    }
+
+    renderer = afx`
+        <h5>{props.title}</h5>
+        <blockquote>{props.text}</blockquote>
+    `
+}
+

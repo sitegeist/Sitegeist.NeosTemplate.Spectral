@@ -1,0 +1,12 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Image': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+
+  ui:
+    label: 'Spotlight Item'
+    icon: first-order-alt
+
+

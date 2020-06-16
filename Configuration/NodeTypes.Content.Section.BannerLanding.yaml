@@ -1,0 +1,53 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Section.BannerLanding':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Neos.Neos:ContentCollection': true
+    'Flownative.Anchorlinks:AnchorMixin': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sitegeist.NeosTemplate.Spectral:Content.Button' : true
+
+  ui:
+    label: 'Banner Section'
+    icon: eye
+    position : 10
+    inspector:
+      groups:
+        identifier:
+          label: 'Identifier'
+        styles:
+          label: 'Appearance'
+        button:
+          label: 'Button'
+
+  properties:
+
+    link:
+      type: string
+      ui:
+        label: 'Link'
+        inspector:
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+          group: button
+
+    linkLabel:
+      type: string
+      ui:
+        label: 'Link Label'
+        reloadIfChanged: true
+        inspector:
+          group: button
+
+  options:
+    template:
+      childNodes:
+        button :
+          type : 'Sitegeist.NeosTemplate.Spectral:Content.Button'
+          properties :
+            solid : true
+

@@ -1,0 +1,69 @@
+'Sitegeist.NeosTemplate.Spectral:Document.HomePage':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Document.Restricted': true
+    'Sitegeist.NeosTemplate.Spectral:Document.LandingPage': true
+
+  ui:
+    icon: globe
+    inspector:
+      tabs:
+        footer:
+          label: Footer Data
+          icon: glass-whiskey
+      groups:
+        siteInfo:
+          label: 'Site Info'
+          icon: home
+        social:
+          tab: footer
+          label: Social channels
+          icon: share-alt
+
+  properties:
+    logo_title:
+      type: string
+      ui:
+        label: 'Logo Text'
+        inspector:
+          group: siteInfo
+
+    social_facebookUri:
+      type: string
+      ui:
+        label: 'Facebook'
+        inspector:
+          group: social
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+
+    social_twitterUri:
+      type: string
+      ui:
+        label: 'Twitter'
+        inspector:
+          group: social
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+
+    social_instagramUri:
+      type: string
+      ui:
+        label: 'Instagram'
+        inspector:
+          group: social
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+
+    social_dribbbleUri:
+      type: string
+      ui:
+        label: 'Dribbble'
+        inspector:
+          group: social
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+
+    emailUri:
+      type: string
+      ui:
+        label: 'Email'
+        inspector:
+          group: social
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+

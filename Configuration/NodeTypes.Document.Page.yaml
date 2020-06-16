@@ -1,0 +1,11 @@
+'Sitegeist.NeosTemplate.Spectral:Document.Page':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Document': true
+
+  ui:
+    icon: file
+    label: Page
+
+  childNodes:
+    main:
+      type: 'Sitegeist.NeosTemplate.Spectral:Collection.Content.Normal'

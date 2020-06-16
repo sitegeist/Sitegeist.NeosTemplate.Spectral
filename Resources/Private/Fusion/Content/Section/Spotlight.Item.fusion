@@ -1,0 +1,42 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prototype(Neos.Neos:ContentComponent) {
+
+    title = Neos.Neos:Editable {
+        property = 'title'
+        block = false
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = false
+    }
+
+    imageSource = Neos.Fusion:Case {
+        hasAsset {
+            condition = ${q(node).property('image')}
+            renderer = Neos.Neos:ImageUri {
+                asset = ${q(node).property('image')}
+            }
+        }
+
+        inBackend {
+            condition = ${node.context.inBackend}
+            renderer = Neos.Fusion:ResourceUri {
+                path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/images/dummy_spotlight.jpg'
+            }
+        }
+    }
+
+    imageAlt = ${q(node).property('imageAlternativeText')}
+
+    renderer = afx`
+        <section class="spotlight">
+            <div class="image">
+                <img src={props.imageSource} alt={props.imageAlt}/>
+            </div>
+            <div class="content">
+                <h2>{props.title}</h2>
+                <p>{props.text}</p>
+            </div>
+        </section>
+    `
+}

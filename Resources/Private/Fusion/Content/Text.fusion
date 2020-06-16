@@ -1,0 +1,23 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Text) < prototype(Neos.Neos:ContentComponent) {
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = true
+    }
+
+    imageSource = Neos.Neos:ImageUri {
+        asset = ${q(node).property('image')}
+    }
+
+    imageAlignment = ${q(node).property('imageAlignment')}
+
+    renderer = afx`
+            <p>
+                <span class={"image "+ props.imageAlignment} @if.has={props.imageSource}>
+                    <img src={props.imageSource} alt=""/>
+                </span>
+                {props.text}
+            </p>
+    `
+}
+

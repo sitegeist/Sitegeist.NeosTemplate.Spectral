@@ -1,0 +1,50 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Footer) < prototype(Neos.Fusion:Component) {
+
+    socialMedia = Neos.Fusion:RawArray {
+
+        00 = Neos.Fusion:RawArray {
+            label = 'Twitter'
+            class = 'brands fa-twitter'
+            href = ${q(site).property('social_twitterUri')}
+            @if.has = ${q(site).property('social_twitterUri')}
+        }
+
+        10 = Neos.Fusion:RawArray {
+            label = 'Facebook'
+            class = 'brands fa-facebook-f'
+            href = ${q(site).property('social_facebookUri')}
+            @if.has = ${q(site).property('social_facebookUri')}
+        }
+
+        20 = Neos.Fusion:RawArray {
+            label = 'Instagram'
+            class = 'brands fa-instagram'
+            href = ${q(site).property('social_instagramUri')}
+            @if.has = ${q(site).property('social_instagramUri')}
+        }
+
+        30 = Neos.Fusion:RawArray {
+            label = 'Dribbble'
+            class = 'brands fa-dribbble'
+            href = ${q(site).property('social_dribbbleUri')}
+            @if.has = ${q(site).property('social_dribbbleUri')}
+        }
+
+        40 = Neos.Fusion:RawArray {
+            label = 'Email'
+            class = 'fa-envelope'
+            href = ${q(site).property('emailUri')}
+            @if.has = ${q(site).property('emailUri')}
+        }
+    }
+
+    renderer = afx`
+        <footer id="footer">
+            <ul class="icons">
+                <Neos.Fusion:Loop  items={props.socialMedia} @children="itemRenderer">
+                    <li><a href={item.href} class={'icon ' + item.class}><span class="label">{item.label}</span></a></li>                   
+                </Neos.Fusion:Loop>
+            </ul>
+        </footer>
+    `
+}

@@ -1,0 +1,25 @@
+{
+    "description": "Neos Integration of the HTML5UP Template 'Spectral' ",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*",
+        "neos/nodetypes": "*",
+        "flownative/anchorlinks": "^1.1",
+        "flowpack/nodetemplates": "^1.2"
+    },
+    "suggest": {
+        "neos/seo": "*",
+        "sitegeist/stagefog": "*"
+    },
+    "name": "sitegeist/neostemplate-spectral",
+    "autoload": {
+        "psr-4": {
+            "Sitegeist\\NeosTemplate\\Spectral\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Sitegeist.NeosTemplate.Spectral"
+        }
+    }
+}

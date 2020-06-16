@@ -1,0 +1,20 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage) < prototype(Neos.Fusion:Component){
+    content = Neos.Neos:ContentCollection {
+        nodePath='main'
+    }
+
+    imageSource = Neos.Neos:ImageUri {
+        asset = ${q(node).property('background')}
+    }
+
+    renderer = Sitegeist.NeosTemplate.Spectral:Document.Base {
+        renderer.bodyTag.attributes.class="landing is-preload"
+        content = afx`
+            <div id="page-wrapper" style={"background-image:url(" + props.imageSource + ")"}>
+                <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Header />
+                {props.content}
+            </div>
+            <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Footer />
+            <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Menu />
+        `
+}

@@ -1,0 +1,64 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Text':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Image': true
+
+  ui:
+    label: 'Text'
+    icon: newspaper-o
+
+  properties:
+    imageAlignment:
+      tyle: string
+      defaultValue: 'left'
+      ui:
+        label: "Image Alignment"
+        reloadIfChanged: true
+        inspector:
+          group: media
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              left:
+                label: 'left'
+              right:
+                label: 'right'
+
+    text:
+      ui:
+        type: string
+        inlineEditable: true
+        inline:
+          editorOptions:
+            placeholder: 'Please insert text here.'
+            autoparagraph: true
+            linking:
+              anchor: true
+              title: true
+              relNofollow: false
+              targetBlank: true
+            formatting:
+              strong: true
+              em: true
+              u: true
+              sub: true
+              sup: true
+              del: false
+              p: true
+              h1: false
+              h2: false
+              h3: false
+              h4: false
+              pre: false
+              underline: true
+              strikethrough: true
+              removeFormat: true
+              left: false
+              right: false
+              center: false
+              justify: false
+              table: true
+              ol: true
+              ul: true
+              a: false

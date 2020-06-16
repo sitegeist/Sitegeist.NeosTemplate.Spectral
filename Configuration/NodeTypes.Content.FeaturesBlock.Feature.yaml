@@ -1,0 +1,10 @@
+'Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Icon': true
+
+  ui:
+    label: 'Feature'
+    icon: dice-one

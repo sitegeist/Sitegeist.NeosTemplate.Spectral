@@ -1,0 +1,16 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Content) < prototype(Neos.Neos:ContentComponent) {
+
+    style = ${q(node).property('style')}
+
+    alignment = ${q(node).property('centerAligned') ? " special" : ""}
+
+    content = Neos.Neos:ContentCollectionRenderer
+
+    renderer = afx`
+        <section  class={'wrapper '+ props.style + props.alignment}>
+            <div class="inner">
+                {props.content}
+            </div>
+        </section>
+    `
+}

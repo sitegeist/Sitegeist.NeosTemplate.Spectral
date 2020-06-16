@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <site name="Spectral" state="1" siteResourcesPackageKey="Sitegeist.NeosTemplate.Spectral" siteNodeName="sitegeist-neostemplate-spectral">
+  <nodes formatVersion="2.0">
+   <node identifier="a7f6a4e9-40cc-4465-8b9a-566397a05bd5" nodeName="sitegeist-neostemplate-spectral">
+    <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Document.HomePage" version="3" removed="" hidden="" hiddenInIndex="">
+     <dimensions>
+      <language>de_DE</language>
+     </dimensions>
+     <accessRoles __type="array"/>
+     <creationDateTime __type="object" __classname="DateTime">2020-03-03T17:24:19+00:00</creationDateTime>
+     <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T10:49:52+00:00</lastModificationDateTime>
+     <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T10:49:52+00:00</lastPublicationDateTime>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+      <logo_title __type="string">spectral</logo_title>
+      <background __type="object" __identifier="a18f5234-77eb-4643-b46d-e66f7ac0a652" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;a18f5234-77eb-4643-b46d-e66f7ac0a652&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;banner.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dd01b64dad9bb3d922da6eb9cf8f6eb8f421d579&quot;,&quot;hash&quot;:&quot;dd01b64dad9bb3d922da6eb9cf8f6eb8f421d579&quot;,&quot;__identity&quot;:&quot;b03fb071-c0b7-4af3-8389-c8063ef45efb&quot;}}</background>
+     </properties>
+    </variant>
+    <node identifier="c1ab9add-cfaa-4c42-8680-e5707525374b" nodeName="main">
+     <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Collection.Content.Landing" version="1" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de_DE</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2020-03-03T17:24:19+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2020-03-03T17:24:19+00:00</lastModificationDateTime>
+      <properties/>
+     </variant>
+     <node identifier="772753cc-c8a0-4f30-912f-e4b32084b770" nodeName="node-9pnj84pu61d66">
+      <variant sortingIndex="300" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.BannerLanding" version="8" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de_DE</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:38:07+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:39:05+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:39:05+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">Spectral</title>
+        <text __type="string">Lorem ipsum dolor sit amet</text>
+       </properties>
+      </variant>
+      <node identifier="dd4857fe-8925-4085-aa0a-70a42a4ec6a5" nodeName="node-e3m5ap8wjd4pp">
+       <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Button" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:38:07+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:39:05+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:39:05+00:00</lastPublicationDateTime>
+        <properties>
+         <solid __type="boolean">1</solid>
+         <buttonLabel __type="string">activate</buttonLabel>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="0e0e539c-bc0f-4af3-83a3-e89f32b7abb6" nodeName="node-ad4sqiim9exi9">
+      <variant sortingIndex="450" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Content" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de_DE</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:48:03+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastPublicationDateTime>
+       <properties>
+        <centerAligned __type="boolean">1</centerAligned>
+        <style __type="string">style3</style>
+       </properties>
+      </variant>
+      <node identifier="2e61032f-3590-497f-8ce5-f228ffe9d903" nodeName="node-jwfy6v5tmlnbe">
+       <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:48:03+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastPublicationDateTime>
+        <properties>
+         <isMajor __type="boolean">1</isMajor>
+         <headingLevel __type="string">h2</headingLevel>
+         <title __type="string">Accumsan mus tortor nunc aliquet</title>
+         <text __type="string">Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend&lt;br&gt;fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</text>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="5f9b3c85-1844-453d-955b-8f036d6a0511" nodeName="node-okyadssqzbxus">
+       <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock" version="2" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:49+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:50:44+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:50:44+00:00</lastPublicationDateTime>
+        <properties/>
+       </variant>
+       <node identifier="8f8d1418-a69d-45f2-910e-ae346fc33aaf" nodeName="node-4btekp186kwps">
+        <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:49+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:27+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:26+00:00</lastPublicationDateTime>
+         <properties>
+          <icon __type="string">paper-plane</icon>
+          <solid __type="boolean"></solid>
+          <title __type="string">Arcu accumsan</title>
+          <text __type="string">Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="a41c4ee3-5ff9-415c-9b35-aedb36b4b684" nodeName="node-5eerqayf5ia54">
+        <variant sortingIndex="500" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature" version="7" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:53:30+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:15+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:15+00:00</lastPublicationDateTime>
+         <properties>
+          <icon __type="string">heart</icon>
+          <solid __type="boolean"></solid>
+          <title __type="string">Aenean Primis</title>
+          <text __type="string">Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="a1a781dc-c03e-4577-9b38-5f3b76c7ea83" nodeName="node-5uwjphcdj70cn">
+        <variant sortingIndex="300" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:52:07+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:27+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:26+00:00</lastPublicationDateTime>
+         <properties>
+          <icon __type="string">code</icon>
+          <solid __type="boolean">1</solid>
+          <title __type="string">Mus Scelerisque</title>
+          <text __type="string">Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="27863514-65da-475d-a912-b05d5d0ba84b" nodeName="node-cuz5xsz7rds40">
+        <variant sortingIndex="400" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:52:20+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:27+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:26+00:00</lastPublicationDateTime>
+         <properties>
+          <icon __type="string">headphones-alt</icon>
+          <solid __type="boolean">1</solid>
+          <title __type="string">Mauris Imperdiet</title>
+          <text __type="string">Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="720c97d7-2341-44ca-a6a9-fdf1e9a23b40" nodeName="node-rungalyo11tw9">
+        <variant sortingIndex="600" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:53:35+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:15+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:15+00:00</lastPublicationDateTime>
+         <properties>
+          <icon __type="string">flag</icon>
+          <solid __type="boolean"></solid>
+          <title __type="string">Tortor Ut</title>
+          <text __type="string">Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="19196b44-3f39-42c1-88f6-3092dc68787a" nodeName="node-tg18rwz0erpsn">
+        <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:49+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:27+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:54:26+00:00</lastPublicationDateTime>
+         <properties>
+          <icon __type="string">laptop</icon>
+          <solid __type="boolean">1</solid>
+          <title __type="string">Ac Augue Eget</title>
+          <text __type="string">Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</text>
+         </properties>
+        </variant>
+       </node>
+      </node>
+     </node>
+     <node identifier="e5e45e50-1142-4fcc-8ee5-54dc06086481" nodeName="node-dcs5mlydft6db">
+      <variant sortingIndex="350" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Content" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de_DE</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:39:18+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:43:01+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:43:01+00:00</lastPublicationDateTime>
+       <properties>
+        <centerAligned __type="boolean">1</centerAligned>
+        <id __type="string">one</id>
+        <style __type="string">style1</style>
+       </properties>
+      </variant>
+      <node identifier="e00e4cc2-1f10-428b-a17f-714d4a434f5a" nodeName="node-sfiokb9wgb224">
+       <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:39:18+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:43:01+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:43:01+00:00</lastPublicationDateTime>
+        <properties>
+         <isMajor __type="boolean">1</isMajor>
+         <headingLevel __type="string">h2</headingLevel>
+         <title __type="string">Aenean commodo ligula eget dolor</title>
+         <text __type="string">Cum sociis natoque penatibus et magnis dis parturient montes,&lt;br&gt;&amp;nbsp;nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</text>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="76c069c5-2fbc-48db-8dce-da1548b17745" nodeName="node-gde73bemkys0n">
+      <variant sortingIndex="400" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight" version="4" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de_DE</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:41:54+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:43:01+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:43:01+00:00</lastPublicationDateTime>
+       <properties>
+        <style __type="string">style2</style>
+        <id __type="string">two</id>
+       </properties>
+      </variant>
+      <node identifier="40ca89c8-323d-4fba-9ef2-981d10897a8c" nodeName="node-2pxv2px57t51y">
+       <variant sortingIndex="300" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item" version="5" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:44:41+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">Augue eleifend aliquet&lt;br&gt;sed condimentum</title>
+         <text __type="string">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</text>
+         <image __type="object" __identifier="94cc9755-41ca-4985-a97e-f1c002882f93" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;94cc9755-41ca-4985-a97e-f1c002882f93&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;pic03.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;e4121e64e16c6ef347da20a4be3bfbc0a102b59e&quot;,&quot;hash&quot;:&quot;e4121e64e16c6ef347da20a4be3bfbc0a102b59e&quot;,&quot;__identity&quot;:&quot;6c984c90-5684-4291-b1b2-d7eb19c1e209&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="ce2a2a3b-ac9b-4dec-970f-a7e0fbf70369" nodeName="node-gmadfa0x881h3">
+       <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:41:54+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">Magna primis lobortis&lt;br&gt;sed ullamcorper</title>
+         <text __type="string">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</text>
+         <image __type="object" __identifier="039256ed-3d72-445b-a0c8-4ee2889d1301" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;039256ed-3d72-445b-a0c8-4ee2889d1301&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;pic01.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;102e12fc5df37c4245c43b9cb494820e87df3ca5&quot;,&quot;hash&quot;:&quot;102e12fc5df37c4245c43b9cb494820e87df3ca5&quot;,&quot;__identity&quot;:&quot;1fc11938-a5f9-4de8-8a80-948c539c296f&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="2e5d9af9-99cc-4eea-ba48-c2e1f07beafc" nodeName="node-jfce4zko0gf2t">
+       <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:41:54+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:49:30+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">Tortor dolore feugiat&lt;br&gt;elementum magna</title>
+         <text __type="string">Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</text>
+         <image __type="object" __identifier="712040bb-8a6d-4347-8b11-176326e8598a" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;712040bb-8a6d-4347-8b11-176326e8598a&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;pic02.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dea1ae056510bc5b75c2d396f12a5e42b75accb7&quot;,&quot;hash&quot;:&quot;dea1ae056510bc5b75c2d396f12a5e42b75accb7&quot;,&quot;__identity&quot;:&quot;87113d91-ea37-4983-82cc-92e10261761d&quot;}}</image>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="a3435187-fb14-4266-b646-79c422e54383" nodeName="node-p70v0jnw5k7vx">
+      <variant sortingIndex="500" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Cta" version="5" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de_DE</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:37+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:58:24+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:58:24+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">Arcue ut vel commodo</title>
+        <text __type="string">Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</text>
+       </properties>
+      </variant>
+      <node identifier="f2ea7239-28f3-4bd1-8eec-a1669fd461fe" nodeName="node-ckuv15ssanqs3">
+       <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Button" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:37+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:58:24+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:58:24+00:00</lastPublicationDateTime>
+        <properties>
+         <solid __type="boolean"></solid>
+         <fit __type="boolean">1</fit>
+         <buttonLabel __type="string">learn more</buttonLabel>
+        </properties>
+       </variant>
+      </node>
+      <node identifier="1be8a950-0fbd-4b03-973e-5f1a73e00a86" nodeName="node-ebhfhvwfw1adu">
+       <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Button" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T21:57:37+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T21:58:24+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T21:58:24+00:00</lastPublicationDateTime>
+        <properties>
+         <solid __type="boolean">1</solid>
+         <fit __type="boolean">1</fit>
+         <buttonLabel __type="string">activate</buttonLabel>
+        </properties>
+       </variant>
+      </node>
+     </node>
+     <node identifier="f72ed29e-72d4-4e80-899b-fa418bac50ba" nodeName="node-uug0983qxsl8w">
+      <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.BannerLanding" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>en_GB</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-04T13:34:07+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-04T13:34:10+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-04T13:34:10+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">spectral</title>
+        <text __type="string">a Sitegeist template</text>
+       </properties>
+      </variant>
+      <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.BannerLanding" version="3" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>fr_FR</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-04T13:33:10+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-04T13:33:27+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-04T13:33:27+00:00</lastPublicationDateTime>
+       <properties>
+        <title __type="string">spectral</title>
+        <text __type="string">un modèle de sitegeist</text>
+       </properties>
+      </variant>
+     </node>
+    </node>
+    <node identifier="2b086123-c68d-47a9-976c-4566ba3fa923" nodeName="node-rgs2zy1ta5j30">
+     <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Document.Page" version="2" removed="" hidden="" hiddenInIndex="">
+      <dimensions>
+       <language>de_DE</language>
+      </dimensions>
+      <accessRoles __type="array"/>
+      <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:00:19+00:00</creationDateTime>
+      <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+      <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+      <properties>
+       <uriPathSegment __type="string">elements</uriPathSegment>
+       <title __type="string">Elements</title>
+      </properties>
+     </variant>
+     <node identifier="939dc389-7b4b-f078-a248-93e73ff2867f" nodeName="main">
+      <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Collection.Content.Normal" version="2" removed="" hidden="" hiddenInIndex="">
+       <dimensions>
+        <language>de_DE</language>
+       </dimensions>
+       <accessRoles __type="array"/>
+       <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:00:19+00:00</creationDateTime>
+       <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+       <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+       <properties/>
+      </variant>
+      <node identifier="b3f4cbfb-5a0a-47bf-a086-f3dee6a3e36d" nodeName="node-3rwxg3pxu9tm7">
+       <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.Content" version="3" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:01:05+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+        <properties>
+         <style __type="string">style5</style>
+        </properties>
+       </variant>
+       <node identifier="e13dd2e1-24fe-4472-bbaf-00c3538da1cc" nodeName="node-55bnvlfo1mnpz">
+        <variant sortingIndex="200" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Text" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:01:05+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+         <properties>
+          <imageAlignment __type="string">left</imageAlignment>
+          <text __type="string">This is &lt;strong&gt;bold&lt;/strong&gt; and this is &lt;strong&gt;strong&lt;/strong&gt;. This is &lt;i&gt;italic&lt;/i&gt; and this is &lt;i&gt;emphasized&lt;/i&gt;. This is &lt;sup&gt;superscript&lt;/sup&gt; text and this is &lt;sub&gt;subscript&lt;/sub&gt; text. This is &lt;u&gt;underlined&lt;/u&gt; and this is code: for (;;) { ... }. Finally, this is a link.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="aa28b961-77de-45aa-a2ad-f730e1ecbf59" nodeName="node-8xyxxfie5lno5">
+        <variant sortingIndex="550" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="7" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:10:38+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:14:16+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:14:16+00:00</lastPublicationDateTime>
+         <properties>
+          <isMajor __type="boolean"></isMajor>
+          <headingLevel __type="string">h4</headingLevel>
+          <title __type="string">Image</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="5a6907da-49a6-43ea-a56c-29ffabab4fbd" nodeName="node-a5f6z90m79gha">
+        <variant sortingIndex="350" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="4" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:06:41+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+         <properties>
+          <isMajor __type="boolean"></isMajor>
+          <headingLevel __type="string">h2</headingLevel>
+          <title __type="string">Heading Level 2</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="307345c0-f126-45d7-a642-50d9510bf877" nodeName="node-b62vyx5g2c6kb">
+        <variant sortingIndex="300" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Separator" version="2" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:06:19+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+       </node>
+       <node identifier="bc1cd393-c46f-4902-810a-191359afd86f" nodeName="node-kalcz02eatpxp">
+        <variant sortingIndex="700" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Text" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:12:56+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:14:16+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:14:16+00:00</lastPublicationDateTime>
+         <properties>
+          <imageAlignment __type="string">left</imageAlignment>
+          <text __type="string">Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</text>
+          <image __type="object" __identifier="a71b97b9-786c-4ba8-8c2b-0b3de5e2ac53" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;a71b97b9-786c-4ba8-8c2b-0b3de5e2ac53&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;pic05.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;fce8a09aec6ba88595b3ca6a38e96f773a2e95d9&quot;,&quot;hash&quot;:&quot;fce8a09aec6ba88595b3ca6a38e96f773a2e95d9&quot;,&quot;__identity&quot;:&quot;af594106-ac6d-496d-8959-e5cc79009e60&quot;}}</image>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="19ae67b9-eca8-40ac-b84e-eacf8fc03f63" nodeName="node-matbs9wxvntyh">
+        <variant sortingIndex="500" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Blockquote" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:09:59+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:02+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:02+00:00</lastPublicationDateTime>
+         <properties>
+          <title __type="string">Blockquote</title>
+          <text __type="string">Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="0a91b1d8-ac1a-4794-88b5-06c5be2213b2" nodeName="node-pcooa0yerlxzg">
+        <variant sortingIndex="375" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="7" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:08:59+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:02+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:02+00:00</lastPublicationDateTime>
+         <properties>
+          <isMajor __type="boolean"></isMajor>
+          <headingLevel __type="string">h4</headingLevel>
+          <title __type="string">Heading Level 4</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="ca6e8346-b521-498b-8786-e080367f7719" nodeName="node-rmruh7zfr5tv4">
+        <variant sortingIndex="400" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="5" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:13+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+         <properties>
+          <isMajor __type="boolean"></isMajor>
+          <headingLevel __type="string">h6</headingLevel>
+          <title __type="string">Heading Level 6</title>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="5c0811cd-2c7d-4dad-a6d1-e8bab4e5bedc" nodeName="node-sj542mevr7zkd">
+        <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Heading" version="8" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:01:05+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+         <properties>
+          <isMajor __type="boolean"></isMajor>
+          <headingLevel __type="string">h4</headingLevel>
+          <title __type="string">Heading with a Subtitle</title>
+          <text __type="string">Lorem ipsum dolor sit amet nullam id egestas urna aliquam</text>
+         </properties>
+        </variant>
+       </node>
+       <node identifier="9bdd50de-3d42-497f-90ae-2e6ceefaac22" nodeName="node-vrgxer7cd57cd">
+        <variant sortingIndex="450" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Separator" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:09:33+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:02+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:02+00:00</lastPublicationDateTime>
+         <properties/>
+        </variant>
+       </node>
+       <node identifier="561fead5-d2c9-497e-907f-ad2bddc7ce20" nodeName="node-whsk43cozbyb6">
+        <variant sortingIndex="650" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Image" version="3" removed="" hidden="" hiddenInIndex="">
+         <dimensions>
+          <language>de_DE</language>
+         </dimensions>
+         <accessRoles __type="array"/>
+         <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:11:57+00:00</creationDateTime>
+         <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:14:16+00:00</lastModificationDateTime>
+         <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:14:16+00:00</lastPublicationDateTime>
+         <properties>
+          <image __type="object" __identifier="a18f5234-77eb-4643-b46d-e66f7ac0a652" __classname="Neos\Media\Domain\Model\Image" __encoding="json">{&quot;__identity&quot;:&quot;a18f5234-77eb-4643-b46d-e66f7ac0a652&quot;,&quot;__type&quot;:&quot;Neos\\Media\\Domain\\Model\\Image&quot;,&quot;title&quot;:&quot;&quot;,&quot;copyrightNotice&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;resource&quot;:{&quot;filename&quot;:&quot;banner.jpg&quot;,&quot;collectionName&quot;:&quot;persistent&quot;,&quot;relativePublicationPath&quot;:&quot;&quot;,&quot;mediaType&quot;:&quot;image\/jpeg&quot;,&quot;sha1&quot;:&quot;dd01b64dad9bb3d922da6eb9cf8f6eb8f421d579&quot;,&quot;hash&quot;:&quot;dd01b64dad9bb3d922da6eb9cf8f6eb8f421d579&quot;,&quot;__identity&quot;:&quot;b03fb071-c0b7-4af3-8389-c8063ef45efb&quot;}}</image>
+         </properties>
+        </variant>
+       </node>
+      </node>
+      <node identifier="3655d178-39b5-4e4d-b506-e9a52716794a" nodeName="node-8v2jemy0ygmca">
+       <variant sortingIndex="100" workspace="live" nodeType="Sitegeist.NeosTemplate.Spectral:Content.Section.BannerNormal" version="4" removed="" hidden="" hiddenInIndex="">
+        <dimensions>
+         <language>de_DE</language>
+        </dimensions>
+        <accessRoles __type="array"/>
+        <creationDateTime __type="object" __classname="DateTime">2020-03-16T22:00:28+00:00</creationDateTime>
+        <lastModificationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastModificationDateTime>
+        <lastPublicationDateTime __type="object" __classname="DateTime">2020-03-16T22:07:42+00:00</lastPublicationDateTime>
+        <properties>
+         <title __type="string">Elements</title>
+         <text __type="string">Aliquam ut ex ut interdum donec amet imperdiet eleifend</text>
+        </properties>
+       </variant>
+      </node>
+     </node>
+    </node>
+   </node>
+  </nodes>
+ </site>
+</root>

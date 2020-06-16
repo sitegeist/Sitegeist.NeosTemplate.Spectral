@@ -1,0 +1,41 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Resource.BodyScripts) < prototype(Neos.Fusion:Component) {
+
+    jquery = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/jquery.min.js'
+    }
+
+    scrollex = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/jquery.scrollex.min.js'
+    }
+
+    scrolley = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/jquery.scrolly.min.js'
+    }
+
+    browser = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/browser.min.js'
+    }
+
+    breakPoints = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/breakpoints.min.js'
+    }
+
+    util = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/util.js'
+    }
+
+    mainJS = Neos.Fusion:ResourceUri {
+        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/js/main.js'
+    }
+
+    renderer = afx`
+        <script src={props.jquery} ></script>
+        <script src={props.scrollex} ></script>
+        <script src={props.scrolley} ></script>
+        <script src={props.browser} ></script>
+        <script src={props.breakPoints} ></script>
+        <script src={props.util} ></script>
+        <script src={props.mainJS} ></script>
+    `
+}
+

@@ -1,0 +1,10 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Image':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Image': true
+
+  ui:
+    label: 'Image'
+    icon: image
+

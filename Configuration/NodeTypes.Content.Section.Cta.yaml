@@ -1,0 +1,58 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Section.Cta':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Neos.Neos:ContentCollection': true
+    'Flownative.Anchorlinks:AnchorMixin': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Sitegeist.NeosTemplate.Spectral:Content.Button': true
+
+  ui:
+    label: 'CTA Section'
+    icon: bullhorn
+    inspector:
+      groups:
+        styles:
+          label: 'Appearance'
+
+  properties:
+
+    style:
+      type: string
+      ui:
+        label: 'style'
+        reloadIfChanged: true
+        inspector:
+          group: styles
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              style1:
+                label: 'style1'
+              style2:
+                label: 'style2'
+              style3:
+                label: 'style3'
+              style4:
+                label: 'style4'
+              style5:
+                label: 'style5'
+  options:
+    template:
+      childNodes:
+        buttonOne:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.Button'
+          properties:
+            solid: true
+            fit: true
+        buttonTwo:
+          type: 'Sitegeist.NeosTemplate.Spectral:Content.Button'
+          properties:
+            solid: false
+            fit: true

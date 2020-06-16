@@ -1,0 +1,24 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Document.Base) < prototype(Neos.Fusion:Component) {
+    title = ${q(documentNode).property('title')}
+    body = null
+    renderer = Neos.Neos:Page {
+        headerComment.@if.enable = false
+
+        head {
+            metaViewport = '<meta name="viewport" content="width=device-width">'
+            stylesheets = Neos.Fusion:Tag {
+                tagName = 'link'
+                attributes {
+                    rel = 'stylesheet'
+                    href = Neos.Fusion:ResourceUri {
+                        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/css/main.css'
+                    }
+                }
+            }
+        }
+        body = ${props.content}
+        bodyScripts = Sitegeist.NeosTemplate.Spectral:Resource.BodyScripts
+        bodyScripts.@position = 'before closingBodyTag'
+    }
+
+}

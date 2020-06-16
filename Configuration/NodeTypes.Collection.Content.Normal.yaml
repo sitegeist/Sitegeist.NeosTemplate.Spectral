@@ -1,0 +1,9 @@
+'Sitegeist.NeosTemplate.Spectral:Collection.Content.Normal':
+  superTypes:
+    'Neos.Neos:ContentCollection': true
+
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Neos:Document': false
+      'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true

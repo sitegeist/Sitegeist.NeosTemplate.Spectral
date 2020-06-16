@@ -1,0 +1,49 @@
+'Sitegeist.NeosTemplate.Spectral:Content.Heading':
+  superTypes:
+    'Sitegeist.NeosTemplate.Spectral:Content': true
+    'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Section': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+
+  ui:
+    label: 'Heading'
+    icon: grip-lines
+    inspector:
+      groups:
+        style:
+          label: 'Style'
+          icon: paint-brush
+
+  properties:
+    isMajor:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: 'Major'
+        reloadIfChanged: true
+        inspector:
+          group: style
+
+    headingLevel:
+      type: string
+      defaultValue: 'h2'
+      ui:
+        label: 'Heading Level'
+        reloadIfChanged: true
+        inspector:
+          group: style
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              h1:
+                label: 'level 1'
+              h2:
+                label: 'level 2'
+              h3:
+                label: 'level 3'
+              h4:
+                label: 'level 4'
+              h5:
+                label: 'level 5'
+              h6:
+                label: 'level 6'

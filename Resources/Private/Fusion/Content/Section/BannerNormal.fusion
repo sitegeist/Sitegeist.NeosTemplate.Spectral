@@ -1,0 +1,23 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.BannerNormal) < prototype(Neos.Neos:ContentComponent) {
+
+    title = Neos.Neos:Editable {
+        property = 'title'
+        block = false
+    }
+
+    text = Neos.Neos:Editable {
+        property = 'text'
+        block = false
+    }
+
+    imageSource = Neos.Neos:ImageUri {
+        asset = ${q(node).property('background')}
+    }
+
+    renderer = afx`
+            <header style={"background-image:url(" + props.imageSource + ")"}>
+                <h2>{props.title}</h2>
+                <p>{props.text}</p>
+            </header>
+    `
+}

@@ -1,0 +1,14 @@
+prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight) < prototype(Neos.Neos:ContentComponent) {
+
+    style = ${q(node).property('style')}
+
+    content = Neos.Neos:ContentCollectionRenderer
+
+    renderer = afx`
+        <Neos.Fusion:Tag
+            tagName="section"
+            attributes.class={'wrapper alt ' + props.style}>
+            {props.content}
+        </Neos.Fusion:Tag>
+    `
+}
