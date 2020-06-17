@@ -1,6 +1,9 @@
 # Sitegeist.NeosTemplate.Spectral
 
-A Neos Integration of the free HTML5UP Template "Spectral"
+A Neos Integration of the free HTML5UP Template "Spectral" using Fusion and AFX.
+
+Note: As this is an integration of an existing template no seperation of presentation and integration is implemented 
+and also no styleguide is created. *This is meant to be used as is and is not crafted for beeing extended!*
 
 ### Authors & Sponsors
 
