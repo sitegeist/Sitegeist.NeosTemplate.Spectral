@@ -1,0 +1,28 @@
+.envelope__label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.envelope__tooltipButton {
+    padding-left: var(--spacing-Half);
+}
+
+.envelope__helpmessage {
+    position: absolute;
+    z-index: var(--zIndex-NodeToolBar);
+    max-width: 100%;
+}
+.envelope--invalid {
+    box-shadow: 0 0 0 2px var(--colors-Error);
+    border-radius: 2px;
+}
+
+.envelope--highlight {
+    box-shadow: 0 0 0 2px var(--colors-Warn);
+    border-radius: 2px;
+}
+
+.envelope__helpThumbnail {
+    max-width: 100%;
+}

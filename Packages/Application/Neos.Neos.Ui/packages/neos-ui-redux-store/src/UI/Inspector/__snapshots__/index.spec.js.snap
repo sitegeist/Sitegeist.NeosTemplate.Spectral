@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The "clear" action should remove pending changes for the currently focused node. 1`] = `
+Object {
+  "shouldPromptToHandleUnappliedChanges": false,
+  "valuesByNodePath": Object {
+    "someOtherContextPath": Object {
+      "someProperty": "value",
+    },
+  },
+}
+`;
+
+exports[`The "clear" action should remove pending changes for the currently focused node. 2`] = `
+Object {
+  "shouldPromptToHandleUnappliedChanges": false,
+  "valuesByNodePath": Object {
+    "someOtherContextPath": Object {
+      "someProperty": "value",
+    },
+  },
+}
+`;
+
+exports[`The "commit" action should ignore the last modification, if it doesn't differ from the current node state 1`] = `
+Object {
+  "valuesByNodePath": Object {
+    "someContextPath": Object {},
+  },
+}
+`;
+
+exports[`The "commit" action should store the last modification on the currently focused node. 1`] = `
+Object {
+  "valuesByNodePath": Object {
+    "someContextPath": Object {
+      "test": Object {
+        "value": "value",
+      },
+    },
+  },
+}
+`;
+
+exports[`The "commit" action should store the last modification on the currently focused node. 2`] = `
+Object {
+  "valuesByNodePath": Object {
+    "someContextPath": Object {
+      "test": Object {
+        "value": "another value",
+      },
+    },
+  },
+}
+`;
+
+exports[`The "commit" action should store the last modification on the currently focused node. 3`] = `
+Object {
+  "valuesByNodePath": Object {
+    "someContextPath": Object {
+      "test": Object {
+        "value": "another value",
+      },
+    },
+  },
+}
+`;
+
+exports[`The "commit" action should store the last modification on the currently focused node. 4`] = `
+Object {
+  "valuesByNodePath": Object {
+    "someContextPath": Object {
+      "test": Object {
+        "hooks": Object {
+          "some": "hook",
+        },
+        "value": "another value",
+      },
+    },
+  },
+}
+`;
+
+exports[`The "discard" action should remove pending changes for the currently focused node. 1`] = `
+Object {
+  "shouldPromptToHandleUnappliedChanges": false,
+  "valuesByNodePath": Object {
+    "someOtherContextPath": Object {
+      "someProperty": "value",
+    },
+  },
+}
+`;
+
+exports[`The "discard" action should remove pending changes for the currently focused node. 2`] = `
+Object {
+  "shouldPromptToHandleUnappliedChanges": false,
+  "valuesByNodePath": Object {
+    "someOtherContextPath": Object {
+      "someProperty": "value",
+    },
+  },
+}
+`;

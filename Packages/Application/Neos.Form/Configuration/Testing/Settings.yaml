@@ -1,0 +1,12 @@
+
+Neos:
+  Form:
+    presets:
+      default:
+        formElementTypes:
+          'Neos.Form:TestingFormElementWithSubElements':
+            implementationClassName: Neos\Form\Tests\Functional\Fixtures\TestingFormElementWithSubElements
+            superTypes:
+              'Neos.Form:Section': true
+            renderingOptions:
+              templatePathPattern: 'resource://{@package}/Private/Form/Section.html'

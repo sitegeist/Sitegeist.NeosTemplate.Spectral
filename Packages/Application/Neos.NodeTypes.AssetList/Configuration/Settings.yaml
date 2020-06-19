@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        Neos.NodeTypes.AssetList: true
+    userInterface:
+      translation:
+        autoInclude:
+          Neos.NodeTypes.AssetList:
+            - 'NodeTypes/*'

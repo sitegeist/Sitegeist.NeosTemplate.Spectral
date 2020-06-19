@@ -1,0 +1,19 @@
+.primaryToolbar {
+    display: flex;
+
+    z-index: var(--zIndex-PrimaryToolbar);
+}
+.primaryToolbar--isHidden {
+    display: none;
+}
+.primaryToolbar__leftSidedActions {
+    display: flex;
+    flex: 0 0 var(--size-SidebarWidth);
+}
+.primaryToolbar__actions {
+    display: flex;
+    flex: 1;
+}
+.primaryToolbar__rightSidedActions {
+    display: flex;
+}

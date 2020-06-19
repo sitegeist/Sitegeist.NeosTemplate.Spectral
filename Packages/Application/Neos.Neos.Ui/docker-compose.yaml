@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app:
+    image: node:8
+    command: Build/Docker/run.sh
+    working_dir: /app
+
+    volumes:
+      - .:/app:cached
+      - $HOME/.npm:/root/.npm:cached

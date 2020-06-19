@@ -1,0 +1,13 @@
+.propertyGroupLabel {
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding: 0 var(--spacing-GoldenUnit) 0 var(--spacing-Full);
+}
+
+.iconWrapper {
+    width: 2em;
+    display: inline-block;
+    text-align: center;
+    margin-left: -5px;
+}

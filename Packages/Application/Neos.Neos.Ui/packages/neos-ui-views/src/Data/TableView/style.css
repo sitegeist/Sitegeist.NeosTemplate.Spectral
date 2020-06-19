@@ -1,0 +1,9 @@
+.table {
+    width: 100%;
+}
+.column {
+    padding-right: var(--spacing-Half);
+}
+.icon {
+    padding-right: var(--spacing-Quarter);
+}

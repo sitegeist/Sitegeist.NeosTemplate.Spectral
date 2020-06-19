@@ -1,0 +1,43 @@
+#
+# Test suite & generated coverage.
+#
+Coverage/
+packages/*/dist/
+packages/*/.nyc_output/
+packages/*/coverage/
+Build/Selenium/Screenshots/*.png
+lcov.info
+
+#
+# Customized credentials for the Neos backend which the WebDriverIO runner uses.
+#
+Build/Selenium/Settings.yaml
+
+#
+# Custom livereload settings
+#
+.webpack.livereload.local.js
+
+#
+# Application & development dependencies.
+#
+node_modules/
+packages/*/yarn.lock
+
+#
+# Compiled assets.
+#
+Resources/Public/JavaScript/**/*.js
+Resources/Public/JavaScript/**/*.map
+Resources/Public/Styles/**/*.css
+!Resources/Public/Styles/ReactCrop.css
+Resources/Public/Styles/**/*.map
+Resources/Public/Styles/Font*
+lerna-debug.log
+npm-debug.log
+
+#
+# editors / IDEs
+#
+.vscode/
+.idea/

@@ -1,0 +1,4 @@
+source: ../Classes/
+destination: ../Documentation/api
+todo: yes
+wipeout: no

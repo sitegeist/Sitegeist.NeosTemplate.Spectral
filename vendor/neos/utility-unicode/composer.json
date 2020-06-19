@@ -1,0 +1,28 @@
+{
+  "name": "neos/utility-unicode",
+  "description": "Flow Unicode Utilities",
+  "type": "library",
+  "homepage": "http://flow.neos.io",
+  "license": "MIT",
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require": {
+    "php": "^7.2",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "mikey179/vfsstream": "~1.6",
+    "phpunit/phpunit": "~8.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Neos\\Utility\\Unicode\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Neos\\Flow\\Utility\\Unicode\\Tests\\": "Tests"
+    }
+  }
+}

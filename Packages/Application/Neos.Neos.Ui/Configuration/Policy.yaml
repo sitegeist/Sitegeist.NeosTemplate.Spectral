@@ -1,0 +1,33 @@
+#                                                                        #
+# Security policy for the Neos.Neos.Ui package                           #
+#                                                                        #
+---
+privilegeTargets:
+
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+
+    'Neos.Neos.Ui:BackendLogin':
+      matcher: 'method(Neos\Neos\Ui\Controller\LoginController->(index|authenticate)Action()) || method(Neos\Flow\Security\Authentication\Controller\AbstractAuthenticationController->authenticateAction())'
+
+    'Neos.Neos.Ui:Backend.GeneralAccess':
+      matcher: 'method(Neos\Neos\Ui\Controller\BackendController->.*())'
+
+    'Neos.Neos.Ui:Backend.ServiceAccess':
+      matcher: 'method(Neos\Neos\Ui\Controller\BackendServiceController->.*())'
+
+roles:
+
+    'Neos.Flow:Everybody':
+      privileges:
+        -
+          privilegeTarget: 'Neos.Neos.Ui:BackendLogin'
+          permission: GRANT
+
+    'Neos.Neos:AbstractEditor':
+      privileges:
+        -
+          privilegeTarget: 'Neos.Neos.Ui:Backend.GeneralAccess'
+          permission: GRANT
+        -
+          privilegeTarget: 'Neos.Neos.Ui:Backend.ServiceAccess'
+          permission: GRANT

@@ -1,0 +1,53 @@
+.menuToggler {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.menuToggler--isActive {
+    color: var(--colors-ContrastBrightest);
+
+    .menuToggler__icon {
+        color: var(--colors-PrimaryBlue);
+
+        &:hover,
+        &:focus {
+            color: var(--colors-PrimaryBlue);
+        }
+    }
+}
+
+.menuToggler__icon {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 34px;
+
+    &:before,
+    &:after {
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        border-color: currentColor;
+    }
+
+    &:before {
+        top: 10px;
+        border-top: 3px solid;
+        border-bottom: 3px solid;
+        content: '';
+    }
+
+    &:after {
+        top: 22px;
+        background-color: currentColor;
+        content: '';
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: var(--colors-PrimaryBlue);
+    }
+}

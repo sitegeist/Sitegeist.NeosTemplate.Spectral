@@ -1,0 +1,19 @@
+#                                                                        #
+# Security policy for the Flow Framework                                 #
+#                                                                        #
+# This file contains the default security policy configuration for the   #
+# Flow Framework. Don't modify this file but add configuration           #
+# options to the Policy.yaml file in the in global Configuration/        #
+# directory instead.                                                     #
+
+roles:
+  'Neos.Flow:Everybody':
+    abstract: true
+
+  'Neos.Flow:Anonymous':
+    abstract: true
+
+  'Neos.Flow:AuthenticatedUser':
+    abstract: true
+
+privilegeTargets: []

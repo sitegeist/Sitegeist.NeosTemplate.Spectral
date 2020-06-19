@@ -1,0 +1,22 @@
+'Flownative.Anchorlinks:AnchorMixin':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        anchor:
+          label: i18n
+      views:
+        anchor:
+          label: 'Anchor view'
+          group: 'anchor'
+          view: 'Flownative.Anchorlinks/Views/AnchorView'
+  properties:
+    sectionId:
+      type: string
+      ui:
+        reloadIfChanged: true
+        label: i18n
+        inspector:
+          group: anchor
+        help:
+          message: i18n

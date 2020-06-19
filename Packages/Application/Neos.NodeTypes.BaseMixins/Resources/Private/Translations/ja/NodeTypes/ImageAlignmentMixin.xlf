@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="" product-name="Neos.NodeTypes.BaseMixins" source-language="en" datatype="plaintext" target-language="ja">
+    <body>
+      <trans-unit id="properties.alignment" xml:space="preserve">
+				<source>Alignment</source>
+			<target state="translated">配置</target></trans-unit>
+      <trans-unit id="properties.alignment.selectBoxEditor.placeholder" xml:space="preserve">
+				<source>Default</source>
+			<target state="translated">デフォルト</target></trans-unit>
+      <trans-unit id="properties.alignment.selectBoxEditor.values.center" xml:space="preserve">
+				<source>Center</source>
+			<target state="translated">中央</target></trans-unit>
+      <trans-unit id="properties.alignment.selectBoxEditor.values.left" xml:space="preserve">
+				<source>Left</source>
+			<target state="translated">左</target></trans-unit>
+      <trans-unit id="properties.alignment.selectBoxEditor.values.right" xml:space="preserve">
+				<source>Right</source>
+			<target state="translated">右</target></trans-unit>
+    </body>
+  </file>
+</xliff>

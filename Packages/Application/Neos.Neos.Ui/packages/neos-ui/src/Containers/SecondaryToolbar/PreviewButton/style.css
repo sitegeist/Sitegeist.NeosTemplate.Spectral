@@ -1,0 +1,27 @@
+.secondaryToolbar__buttonLink {
+    position: relative;
+    display: inline-block;
+    height: var(--spacing-GoldenUnit);
+    line-height: var(--spacing-GoldenUnit);
+    min-width: var(--spacing-GoldenUnit);
+    padding: 0;
+    border: 0;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: top;
+    width: var(--spacing-GoldenUnit);
+    color: var(--colors-ContrastBrightest);
+    text-align: center;
+    background: transparent;
+
+    &:focus {
+        outline: unset;
+    }
+}
+
+a.secondaryToolbar__buttonLink:hover {
+    background: var(--colors-PrimaryBlue);
+}
+
+.secondaryToolbar__buttonLink--isDisabled {
+    opacity: .5;
+}

@@ -1,0 +1,86 @@
+-
+  name: 'Change'
+  uriPattern: 'change'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'change'
+  httpMethods: ['POST']
+
+-
+  name: 'Publish'
+  uriPattern: 'publish'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'publish'
+  httpMethods: ['POST']
+
+-
+  name: 'Discard'
+  uriPattern: 'discard'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'discard'
+  httpMethods: ['POST']
+
+-
+  name: 'Change Base Workspace'
+  uriPattern: 'change-base-workspace'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'changeBaseWorkspace'
+  httpMethods: ['POST']
+
+-
+  name: 'Copy nodes to clipboard'
+  uriPattern: 'copy-nodes'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'copyNodes'
+  httpMethods: ['POST']
+
+-
+  name: 'Cut nodes to clipboard'
+  uriPattern: 'cut-nodes'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'cutNodes'
+  httpMethods: ['POST']
+
+-
+  name: 'Clear clipboard'
+  uriPattern: 'clear-clipboard'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'clearClipboard'
+  httpMethods: ['POST']
+
+-
+  name: 'Load Tree'
+  uriPattern: 'load-tree'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'loadTree'
+  httpMethods: ['POST']
+
+-
+  name: 'FlowQuery'
+  uriPattern: 'flow-query'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'flowQuery'
+  httpMethods: ['POST']
+
+-
+  name: 'Get Workspace Info'
+  uriPattern: 'get-workspace-info'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'getWorkspaceInfo'
+  httpMethods: ['GET']
+-
+  name: 'Get Additional Node Metadata'
+  uriPattern: 'get-additional-node-metadata'
+  defaults:
+    '@controller': 'BackendService'
+    '@action': 'getAdditionalNodeMetadata'
+  httpMethods: ['POST']

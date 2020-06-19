@@ -2,6 +2,7 @@
   superTypes:
     'Sitegeist.NeosTemplate.Spectral:Constraint.Document.Restricted': true
     'Sitegeist.NeosTemplate.Spectral:Document.LandingPage': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Style': true
 
   ui:
     icon: globe
@@ -10,9 +11,6 @@
         footer:
           label: Footer Data
           icon: glass-whiskey
-        style:
-          label: Style
-          icon: paint-brush
 
       groups:
         siteInfo:
@@ -22,10 +20,6 @@
           tab: footer
           label: Social channels
           icon: share-alt
-        styleColor:
-          tab: style
-          icon: paint-brush
-          label: Colors
 
   properties:
     logo_title:
@@ -75,10 +69,5 @@
           group: social
           editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
 
-    colorFontLight:
-      type: string
-      ui:
-        label: 'Font light color'
-        reloadIfChanged: true
-        inspector:
-          group: styleColor
+
+

@@ -10,18 +10,41 @@ use Neos\Flow\Annotations as Flow;
  * @Flow\Proxy(false)
  */
 
-class ColorEditor implements ProtectedContextAwareInterface
+class ColorEditorHelper implements ProtectedContextAwareInterface
 {
+
     /**
-     * Wrap the incoming string in curly brackets
+     * lighten the hsla number by extracting the lightness part and increasing it
      *
-     * @param $text string
+     * @param $hslaColor string
+     * @param $percentage integer
      * @return string
      */
 
-    public function wrapInDollar($text) {
-        return '$$$ ' . $text . ' $$$';
+    public function lightenHsla($hslaColor, $percentage) {
+        $hslaParts = explode(',', $hslaColor);
+        $lightness = floatval(rtrim($hslaParts[2],'%'));
+        $lightness =round( $lightness *  ($percentage/100 + 1));
+        $hslaParts[2] = $lightness . '%';
+        return join(",",$hslaParts);
     }
+
+    /**
+     * make the hsla number more transparent by extracting the alpha part and increasing it
+     *
+     * @param $hslaColor string
+     * @param $percentage integer
+     * @return string
+     */
+
+    public function makeHslaTransparent($hslaColor, $percentage) {
+        $hslaParts = explode(',', $hslaColor);
+        $alpha = floatval($hslaParts[3]);
+        $alpha =round( $alpha *  ($percentage/100 + 1));
+        $hslaParts[3] = $alpha.')';
+        return join(",",$hslaParts);
+    }
+
 
     /**
      * All methods are considered safe

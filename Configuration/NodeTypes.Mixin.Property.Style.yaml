@@ -1,43 +1,273 @@
-'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Icon':
+'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Style':
   abstract: true
 
   ui:
     inspector:
+      tabs:
+        style:
+          label: Style
+          icon: paint-brush
       groups:
-        icon:
-          icon: 'icons'
+        palette:
+          tab: style
+          icon: paint-brush
+          label: palette
+        button:
+          tab: style
+          icon: paint-brush
+          label: Button
+        style1:
+          tab: style
+          icon: paint-brush
+          label: Style 1
+        style2:
+          tab: style
+          icon: paint-brush
+          label: Style 2
+        style3:
+          tab: style
+          icon: paint-brush
+          label: Style 3
+
 
   properties:
-    icon:
+    paletteBg:
       type: string
-      defaultValue: 'flag'
       ui:
-        label: 'Icon'
+        label: 'Background'
         reloadIfChanged: true
         inspector:
-          group: icon
-          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          group: palette
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
           editorOptions:
-            values:
-              code:
-                label: 'Code'
-              flag:
-                label: 'Flag'
-              headphones-alt:
-                label: 'Headphones'
-              heart:
-                label: 'Heart'
-              laptop:
-                label: 'Laptop'
-              paper-plane:
-                label: 'Paper'
-    solid:
-      type: boolean
-      defaultValue: true
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    paletteFg:
+      type: string
       ui:
-        label: 'Solid'
+        label: 'Foreground'
         reloadIfChanged: true
         inspector:
-          group: icon
+          group: palette
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    paletteBorder:
+      type: string
+      ui:
+        label: 'Border Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: palette
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    paletteBorderBg:
+      type: string
+      ui:
+        label: 'Border Background'
+        reloadIfChanged: true
+        inspector:
+          group: palette
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
 
+    buttonPrimaryBg:
+      type: string
+      ui:
+        label: 'Button Primary Background'
+        reloadIfChanged: true
+        inspector:
+          group: button
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    buttonPrimaryFg:
+      type: string
+      ui:
+        label: 'Button Primary Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: button
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+
+
+    style1Bg:
+      type: string
+      ui:
+        label: 'Background'
+        reloadIfChanged: true
+        inspector:
+          group: style1
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style1Fg:
+      type: string
+      ui:
+        label: 'Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: style1
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style1Border:
+      type: string
+      ui:
+        label: 'Border Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: style1
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style1BorderBg:
+      type: string
+      ui:
+        label: 'Border Background'
+        reloadIfChanged: true
+        inspector:
+          group: style1
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+
+    style2Bg:
+      type: string
+      ui:
+        label: 'Background'
+        reloadIfChanged: true
+        inspector:
+          group: style2
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style2Fg:
+      type: string
+      ui:
+        label: 'Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: style2
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style2Border:
+      type: string
+      ui:
+        label: 'Border Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: style2
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style2BorderBg:
+      type: string
+      ui:
+        label: 'Border Background'
+        reloadIfChanged: true
+        inspector:
+          group: style2
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+
+    style3Bg:
+      type: string
+      ui:
+        label: 'Background'
+        reloadIfChanged: true
+        inspector:
+          group: style3
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style3Fg:
+      type: string
+      ui:
+        label: 'Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: style3
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style3Border:
+      type: string
+      ui:
+        label: 'Border Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: style3
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style3BorderBg:
+      type: string
+      ui:
+        label: 'Border Background'
+        reloadIfChanged: true
+        inspector:
+          group: style3
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
 

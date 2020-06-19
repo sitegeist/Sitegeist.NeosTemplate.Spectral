@@ -1,0 +1,6 @@
+'Neos\Neos\Ui\View\BackendFusionView':
+  properties:
+    typoScriptParser:
+      object: Neos\Fusion\Core\Parser
+    fallbackView:
+      object: Neos\FluidAdaptor\View\TemplateView

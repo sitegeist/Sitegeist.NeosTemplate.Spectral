@@ -1,0 +1,35 @@
+{
+  "collectCoverageFrom": [
+    "src/**/*.{js,ts,tsx}"
+  ],
+  "coveragePathIgnorePatterns": [
+    "\\.((story|spec).(js|tsx?))$"
+  ],
+  "transformIgnorePatterns": ["node_modules/(?!@neos-project)"],
+  "unmockedModulePathPatterns": [
+    "sinon"
+  ],
+  "setupFiles": [
+    "../../node_modules/@neos-project/jest-preset-neos-ui/src/setupBrowserEnv.js",
+    "../../node_modules/@neos-project/jest-preset-neos-ui/src/enzymeConfiguration.js"
+  ],
+  "testEnvironment": "node",
+  "testMatch": [
+    "**/src/**/?(*.)spec.{js,ts,tsx}"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "\\.(css|svg)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ]
+}
