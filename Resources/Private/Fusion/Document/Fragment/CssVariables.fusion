@@ -4,14 +4,14 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
         palette-background = ${q(site).property('paletteBg')}
         palette-background.@if.isset =  ${q(site).property('paletteBg')}
 
-        palette-foreground = ${ColorEditor.lightenHsla(this.palette-background,25)}
-        palette-foreground.@if.isset =  ${q(site).property('paletteBg')}
+        palette-foreground-bold = ${q(site).property('paletteFgBold')}
+        palette-foreground-bold.@if.isset =  ${q(site).property('paletteFgBold')}
 
-        palette-foreground-light = ${ColorEditor.lightenHsla(this.palette-background,40)}
-        palette-foreground-light.@if.isset =  ${q(site).property('paletteBg')}
+        palette-foreground = ${q(site).property('paletteFg')}
+        palette-foreground.@if.isset =  ${q(site).property('paletteFg')}
 
-        palette-foreground-bold = ${q(site).property('paletteFg')}
-        palette-foreground-bold.@if.isset =  ${q(site).property('paletteFg')}
+        palette-foreground-light = ${ColorEditor.lightenHsla(this.palette-foreground,30)}
+        palette-foreground-light.@if.isset =  ${q(site).property('paletteFg')}
 
         palette-border = ${q(site).property('paletteBorder')}
         palette-border.@if.isset =  ${q(site).property('paletteBorder')}
@@ -19,23 +19,26 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
         palette-border-background = ${q(site).property('paletteBorderBg')}
         palette-border-background.@if.isset =  ${q(site).property('paletteBorderBg')}
 
-        palette-border2-background = ${ColorEditor.makeHslaTransparent(this.palette-border-background,25)}
+        palette-border2-background = ${ColorEditor.makeHslaTransparent(this.palette-border-background,35)}
         palette-border2-background.@if.isset =  ${q(site).property('paletteBorderBg')}
 
         button-primary-background = ${q(site).property('buttonPrimaryBg')}
         button-primary-foreground = ${q(site).property('buttonPrimaryFg')}
 
+        footer-background = ${q(site).property('footerBg')}
+        footer-background.@if.isset =  ${q(site).property('footerBg')}
+
         style1-background = ${q(site).property('style1Bg')}
         style1-background.@if.isset =  ${q(site).property('style1Bg')}
 
-        style1-foreground = ${ColorEditor.lightenHsla(this.style1-background,25)}
-        style1-foreground.@if.isset =  ${q(site).property('style1Bg')}
+        style1-foreground-bold = ${q(site).property('style1FgBold')}
+        style1-foreground-bold.@if.isset =  ${q(site).property('style1FgBold')}
 
-        style1-foreground-light = ${ColorEditor.lightenHsla(this.style1-background,40)}
-        style1-foreground-light.@if.isset =  ${q(site).property('style1Bg')}
+        style1-foreground = ${q(site).property('style1Fg')}
+        style1-foreground.@if.isset =  ${q(site).property('style1Fg')}
 
-        style1-foreground-bold = ${q(site).property('style1Fg')}
-        style1-foreground-bold.@if.isset =  ${q(site).property('style1Fg')}
+        style1-foreground-light = ${ColorEditor.lightenHsla(this.style1-foreground,30)}
+        style1-foreground-light.@if.isset =  ${q(site).property('style1Fg')}
 
         style1-border = ${q(site).property('style1Border')}
         style1-border.@if.isset =  ${q(site).property('style1Border')}
@@ -43,20 +46,20 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
         style1-border-background = ${q(site).property('style1BorderBg')}
         style1-border-background.@if.isset =  ${q(site).property('style1BorderBg')}
 
-        style1-border2-background = ${ColorEditor.makeHslaTransparent(this.style1-border-background,25)}
+        style1-border2-background = ${ColorEditor.makeHslaTransparent(this.style1-border-background,35)}
         style1-border2-background.@if.isset =  ${q(site).property('style1BorderBg')}
 
         style2-background = ${q(site).property('style2Bg')}
         style2-background.@if.isset =  ${q(site).property('style2Bg')}
 
-        style2-foreground = ${ColorEditor.lightenHsla(this.style2-background,25)}
-        style2-foreground.@if.isset =  ${q(site).property('style2Bg')}
+        style2-foreground-bold = ${q(site).property('style2FgBold')}
+        style2-foreground-bold.@if.isset =  ${q(site).property('style2FgBold')}
 
-        style2-foreground-light = ${ColorEditor.lightenHsla(this.style2-background,40)}
-        style2-foreground-light.@if.isset =  ${q(site).property('style2Bg')}
+        style2-foreground = ${q(site).property('style2Fg')}
+        style2-foreground.@if.isset =  ${q(site).property('style2Fg')}
 
-        style2-foreground-bold = ${q(site).property('style2Fg')}
-        style2-foreground-bold.@if.isset =  ${q(site).property('style2Fg')}
+        style2-foreground-light = ${ColorEditor.lightenHsla(this.style2-foreground,30)}
+        style2-foreground-light.@if.isset =  ${q(site).property('style2Fg')}
 
         style2-border = ${q(site).property('style2Border')}
         style2-border.@if.isset =  ${q(site).property('style2Border')}
@@ -64,20 +67,20 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
         style2-border-background = ${q(site).property('style2BorderBg')}
         style2-border-background.@if.isset =  ${q(site).property('style2BorderBg')}
 
-        style2-border2-background = ${ColorEditor.makeHslaTransparent(this.style2-border-background,25)}
+        style2-border2-background = ${ColorEditor.makeHslaTransparent(this.style2-border-background,35)}
         style2-border2-background.@if.isset =  ${q(site).property('style2BorderBg')}
 
         style3-background = ${q(site).property('style3Bg')}
         style3-background.@if.isset =  ${q(site).property('style3Bg')}
 
-        style3-foreground = ${ColorEditor.lightenHsla(this.style3-background,25)}
-        style3-foreground.@if.isset =  ${q(site).property('style3Bg')}
+        style3-foreground-bold = ${q(site).property('style3FgBold')}
+        style3-foreground-bold.@if.isset =  ${q(site).property('style3FgBold')}
 
-        style3-foreground-light = ${ColorEditor.lightenHsla(this.style3-background,40)}
-        style3-foreground-light.@if.isset =  ${q(site).property('style3Bg')}
+        style3-foreground = ${q(site).property('style3Fg')}
+        style3-foreground.@if.isset =  ${q(site).property('style3Fg')}
 
-        style3-foreground-bold = ${q(site).property('style3Fg')}
-        style3-foreground-bold.@if.isset =  ${q(site).property('style3Fg')}
+        style3-foreground-light = ${ColorEditor.lightenHsla(this.style3-foreground,30)}
+        style3-foreground-light.@if.isset =  ${q(site).property('style3Fg')}
 
         style3-border = ${q(site).property('style3Border')}
         style3-border.@if.isset =  ${q(site).property('style3Border')}
@@ -85,7 +88,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
         style3-border-background = ${q(site).property('style3BorderBg')}
         style3-border-background.@if.isset =  ${q(site).property('style3BorderBg')}
 
-        style3-border2-background = ${ColorEditor.makeHslaTransparent(this.style3-border-background,25)}
+        style3-border2-background = ${ColorEditor.makeHslaTransparent(this.style3-border-background,35)}
         style3-border2-background.@if.isset =  ${q(site).property('style3BorderBg')}
     }
 

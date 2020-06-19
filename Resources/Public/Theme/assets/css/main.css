@@ -85,7 +85,7 @@ html {
 }
 
 body {
-    background: var(--palette-background, #999);
+    background: var(--palette-background, #fff);
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
@@ -99,7 +99,8 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 body, input, select, textarea {
-    color: var(--palette-foreground, #999);
+    color: #0e0e0e;
+    color: var(--palette-foreground, #eee);
     font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 15pt;
     font-weight: 400;
@@ -137,7 +138,7 @@ a:hover {
 }
 
 strong, b {
-    color: var(--palette-foreground-bold, #999);
+    color: var(--palette-foreground-bold, #eee);
     font-weight: 600;
 }
 
@@ -150,7 +151,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--palette-foreground-bold, #999);
+    color: var(--palette-foreground-bold, #eee);
     font-weight: 800;
     letter-spacing: 0.225em;
     line-height: 1em;
@@ -213,7 +214,7 @@ sup {
 
 hr {
     border: 0;
-    border-bottom: solid 2px var(--palette-border, #999);
+    border-bottom: solid 2px var(--palette-border, #eee);
     margin: 3em 0;
 }
 hr.major {
@@ -221,14 +222,14 @@ hr.major {
 }
 
 blockquote {
-    border-left: solid 4px var(--palette-border, #999);
+    border-left: solid 4px var(--palette-border, #eee);
     font-style: italic;
     margin: 0 0 2em 0;
     padding: 0.5em 0 0.5em 2em;
 }
 
 code {
-    background: var(--palette-border-background, #999);
+    background: var(--palette-border-background, #fff);
     border-radius: 3px;
     font-family: "Courier New", monospace;
     font-size: 0.9em;
@@ -1378,7 +1379,7 @@ section.special, article.special {
 }
 
 header p {
-    color: var(--palette-foreground-light, #999);
+    color: var(--palette-foreground-light, #eee);
     position: relative;
     top: -0.25em;
 }
@@ -1394,7 +1395,7 @@ header.major {
     margin: 0 0 3.5em 0;
 }
 header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
-    border-bottom: solid 2px var(--palette-border, #999);
+    border-bottom: solid 2px var(--palette-border, #eee);
     display: inline-block;
     padding-bottom: 1em;
     position: relative;
@@ -1405,7 +1406,7 @@ header.major h2:after, header.major h3:after, header.major h4:after, header.majo
     height: 1px;
 }
 header.major p {
-    color: var(--palette-foreground, #999);
+    color: var(--palette-foreground, #eee);
     top: 0;
 }
 @media screen and (max-width: 736px) {
@@ -1425,7 +1426,7 @@ form {
 }
 
 label {
-    color: var(--palette-foreground-bold, #999);
+    color: var(--palette-foreground-bold, #eee);
     display: block;
     font-size: 0.9em;
     font-weight: 600;
@@ -1441,7 +1442,7 @@ textarea {
     -webkit-appearance: none;
     -ms-appearance: none;
     appearance: none;
-    background-color: var(--palette-border-background, #999);
+    background-color: var(--palette-border-background, #fff);
     border-radius: 3px;
     border: none;
     color: inherit;
@@ -1463,7 +1464,7 @@ input[type=password]:focus,
 input[type=email]:focus,
 select:focus,
 textarea:focus {
-    box-shadow: 0 0 0 2px var(--style1-background, #999);
+    box-shadow: 0 0 0 2px var(--style1-background, #fff);
 }
 
 select {
@@ -1508,7 +1509,7 @@ input[type=radio] {
 input[type=checkbox] + label,
 input[type=radio] + label {
     text-decoration: none;
-    color: var(--palette-foreground, #999);
+    color: var(--palette-foreground, #eee);
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
@@ -1532,7 +1533,7 @@ input[type=radio] + label:before {
 }
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
-    background: var(--palette-border-background, #999);
+    background: var(--palette-border-background, #fff);
     border-radius: 3px;
     content: "";
     display: inline-block;
@@ -1547,13 +1548,13 @@ input[type=radio] + label:before {
 }
 input[type=checkbox]:checked + label:before,
 input[type=radio]:checked + label:before {
-    background: var(--palette-background, #999);
-    color: var(--palette-foreground-bold, #999);
+    background: var(--palette-background, #fff);
+    color: var(--palette-foreground-bold, #eee);
     content: "";
 }
 input[type=checkbox]:focus + label:before,
 input[type=radio]:focus + label:before {
-    box-shadow: 0 0 0 2px var(--style1-background, #999);
+    box-shadow: 0 0 0 2px var(--style1-background, #fff);
 }
 
 input[type=checkbox] + label:before {
@@ -1565,29 +1566,29 @@ input[type=radio] + label:before {
 }
 
 ::-webkit-input-placeholder {
-    color: var(--palette-foreground-light, #999) !important;
+    color: var(--palette-foreground-light, #eee) !important;
     opacity: 1;
 }
 
 :-moz-placeholder {
-    color: var(--palette-foreground-light, #999) !important;
+    color: var(--palette-foreground-light, #eee) !important;
     opacity: 1;
 }
 
 ::-moz-placeholder {
-    color: var(--palette-foreground-light, #999) !important;
+    color: var(--palette-foreground-light, #eee) !important;
     opacity: 1;
 }
 
 :-ms-input-placeholder {
-    color: var(--palette-foreground-light, #999) !important;
+    color: var(--palette-foreground-light, #eee) !important;
     opacity: 1;
 }
 
 /* Box */
 .box {
     border-radius: 3px;
-    border: solid 2px var(--palette-border, #999);
+    border: solid 2px var(--palette-border, #eee);
     margin-bottom: 2em;
     padding: 1.5em;
 }
@@ -1638,7 +1639,7 @@ input[type=radio] + label:before {
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     border-radius: 3px;
-    border: solid 2px var(--palette-border, #999);
+    border: solid 2px var(--palette-border, #eee);
     display: inline-block;
     font-size: 1.35em;
     height: calc(3em + 2px);
@@ -1661,17 +1662,17 @@ input[type=radio] + label:before {
 }
 
 .icon {
-    color: var(--palette-background, #999);
+    color: var(--palette-background, #eee);
 }
 
 .icon.style1 {
-    color: var(--style1-background, #999);
+    color: var(--style1-background, #eee);
 }
 .icon.style2 {
-    color: var(--style2-background, #999);
+    color: var(--style2-background, #eee);
 }
 .icon.style3 {
-    color: var(--style3-background, #999);
+    color: var(--style3-background, #eee);
 }
 
 /* Image */
@@ -1733,7 +1734,7 @@ ul.alt {
     padding-left: 0;
 }
 ul.alt li {
-    border-top: solid 1px var(--palette-border, #999);
+    border-top: solid 1px var(--palette-border, #eee);
     padding: 0.5em 0;
 }
 ul.alt li:first-child {
@@ -1884,34 +1885,34 @@ table {
     width: 100%;
 }
 table tbody tr {
-    border: solid 1px var(--palette-border, #999);
+    border: solid 1px var(--palette-border, #eee);
     border-left: 0;
     border-right: 0;
 }
 table tbody tr:nth-child(2n+1) {
-    background-color: var(--palette-border-background, #999);
+    background-color: var(--palette-border-background, #fff);
 }
 table td {
     padding: 0.75em 0.75em;
 }
 table th {
-    color: var(--palette-foreground-bold, #999);
+    color: var(--palette-foreground-bold, #eee);
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left;
 }
 table thead {
-    border-bottom: solid 2px var(--palette-border, #999);
+    border-bottom: solid 2px var(--palette-border, #eee);
 }
 table tfoot {
-    border-top: solid 2px var(--palette-border, #999);
+    border-top: solid 2px var(--palette-border, #eee);
 }
 table.alt {
     border-collapse: separate;
 }
 table.alt tbody tr td {
-    border: solid 1px var(--palette-border, #999);
+    border: solid 1px var(--palette-border, #eee);
     border-left-width: 0;
     border-top-width: 0;
 }
@@ -1945,8 +1946,8 @@ button,
     background-color: transparent;
     border-radius: 3px;
     border: 0;
-    box-shadow: inset 0 0 0 2px var(--palette-border, #999);
-    color: var(--palette-foreground-bold, #999);
+    box-shadow: inset 0 0 0 2px var(--palette-border, #eee);
+    color: var(--palette-foreground-bold, #eee);
     cursor: pointer;
     display: inline-block;
     font-size: 0.8em;
@@ -1968,14 +1969,14 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover,
 .button:hover {
-    background-color: var(--palette-border-background, #999);
+    background-color: var(--palette-border-background, #fff);
 }
 input[type=submit]:active,
 input[type=reset]:active,
 input[type=button]:active,
 button:active,
 .button:active {
-    background-color: var(--palette-border2-background, #999);
+    background-color: var(--palette-border2-background, #fff);
 }
 input[type=submit].icon:before,
 input[type=reset].icon:before,
@@ -2010,23 +2011,25 @@ input[type=reset].primary,
 input[type=button].primary,
 button.primary,
 .button.primary {
-    background-color: var(--button-primary-background, #999);
+    background-color: var(--button-primary-background, #fff);
     box-shadow: none !important;
-    color: var(--button-primary-foreground, #999) !important;
+    color: var(--button-primary-foreground, #eee) !important;
 }
 input[type=submit].primary:hover,
 input[type=reset].primary:hover,
 input[type=button].primary:hover,
 button.primary:hover,
 .button.primary:hover {
-    background-color: #f0f029 !important;
+    color: var(--button-primary-background, #eee) !important;
+    background-color: var(--button-primary-foreground, #eee) !important;
 }
 input[type=submit].primary:active,
 input[type=reset].primary:active,
 input[type=button].primary:active,
 button.primary:active,
 .button.primary:active {
-    background-color: #d6d60f !important;
+    color: var(--button-primary-background, #eee) !important;
+    background-color: var(--button-primary-foreground, #eee) !important;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2108,7 +2111,7 @@ button:disabled,
 }
 .features li:before {
     display: block;
-    color: var(--accent2-bg, #999);
+    color: var(--palette-border, #eee);
     position: absolute;
     left: 1.75em;
     top: 2.75em;
@@ -2142,7 +2145,7 @@ button:disabled,
     .features li {
         padding: 3em 0 1em 0;
         background-color: transparent !important;
-        border-top: solid 2px var(--palette-border, #999);
+        border-top: solid 2px var(--palette-border, #eee);
         width: 100%;
     }
     .features li:first-child {
@@ -2271,377 +2274,386 @@ button:disabled,
     padding: 0;
 }
 .wrapper.style1 {
-    background-color: var(--style1-background, #999);
-    color: var(--style1-foreground, #999);
+    background-color: var(--style1-background, #fff);
+    color: var(--style1-foreground, #eee);
 }
 .wrapper.style1 strong, .wrapper.style1 b {
-    color: var(--style1-foreground-bold, #999);
+    color: var(--style1-foreground-bold, #eee);
 }
 .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-    color: var(--style1-foreground-bold, #999);
+    color: var(--style1-foreground-bold, #eee);
 }
 .wrapper.style1 hr {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 blockquote {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 code {
-    background: var(--style1-border-background, #999);
+    background: var(--style1-border-background, #fff);
 }
 .wrapper.style1 header p {
-    color: var(--style1-foreground-light, #999);
+    color: var(--style1-foreground-light, #eee);
 }
 .wrapper.style1 header.major h2, .wrapper.style1 header.major h3, .wrapper.style1 header.major h4, .wrapper.style1 header.major h5, .wrapper.style1 header.major h6 {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 header.major p {
-    color: var(--style1-foreground, #999);
+    color: var(--style1-foreground, #eee);
+}
+.wrapper.style1 .features li:before {
+    color: var(--style1-border, #eee);
 }
 .wrapper.style1 label {
-    color: var(--style1-foreground-bold, #999);
+    color: var(--style1-foreground-bold, #eee);
 }
 .wrapper.style1 input[type=text],
 .wrapper.style1 input[type=password],
 .wrapper.style1 input[type=email],
 .wrapper.style1 select,
 .wrapper.style1 textarea {
-    background-color: var(--style1-border-background, #999);
+    background-color: var(--style1-border-background, #fff);
 }
 .wrapper.style1 select {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23995' /%3E%3C/svg%3E");
 }
 .wrapper.style1 select option {
-    color: var(--style1-foreground-bold, #999);
-    background: var(--style1-background, #999);
+    color: var(--style1-foreground-bold, #eee);
+    background: var(--style1-background, #fff);
 }
 .wrapper.style1 input[type=checkbox] + label,
 .wrapper.style1 input[type=radio] + label {
-    color: var(--style1-foreground, #999);
+    color: var(--style1-foreground, #eee);
 }
 .wrapper.style1 input[type=checkbox] + label:before,
 .wrapper.style1 input[type=radio] + label:before {
-    background: var(--style1-border-background, #999);
+    background: var(--style1-border-background, #fff);
 }
 .wrapper.style1 input[type=checkbox]:checked + label:before,
 .wrapper.style1 input[type=radio]:checked + label:before {
-    background: var(--style1-foreground-bold, #999);
-    color: var(--style1-background, #999);
+    background: var(--style1-foreground-bold, #eee);
+    color: var(--style1-background, #fff);
 }
 .wrapper.style1 ::-webkit-input-placeholder {
-    color: var(--style1-foreground-light, #999) !important;
+    color: var(--style1-foreground-light, #eee) !important;
 }
 .wrapper.style1 :-moz-placeholder {
-    color: var(--style1-foreground-light, #999) !important;
+    color: var(--style1-foreground-light, #eee) !important;
 }
 .wrapper.style1 ::-moz-placeholder {
-    color: var(--style1-foreground-light, #999) !important;
+    color: var(--style1-foreground-light, #eee) !important;
 }
 .wrapper.style1 :-ms-input-placeholder {
-    color: var(--style1-foreground-light, #999) !important;
+    color: var(--style1-foreground-light, #eee) !important;
 }
 .wrapper.style1 .formerize-placeholder {
-    color: var(--style1-foreground-light, #999) !important;
+    color: var(--style1-foreground-light, #eee) !important;
 }
 .wrapper.style1 .icon.major {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 ul.alt li {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 table tbody tr {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 table tbody tr:nth-child(2n+1) {
-    background-color: var(--style1-border-background, #999);
+    background-color: var(--style1-border-background, #fff);
 }
 .wrapper.style1 table th {
-    color: var(--style1-foreground-bold, #999);
+    color: var(--style1-foreground-bold, #eee);
 }
 .wrapper.style1 table thead {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 table tfoot {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 table.alt tbody tr td {
-    border-color: var(--style1-border, #999);
+    border-color: var(--style1-border, #eee);
 }
 .wrapper.style1 input[type=submit],
 .wrapper.style1 input[type=reset],
 .wrapper.style1 input[type=button],
 .wrapper.style1 button,
 .wrapper.style1 .button {
-    box-shadow: inset 0 0 0 2px var(--style1-border, #999);
-    color: var(--style1-foreground-bold, #999);
+    box-shadow: inset 0 0 0 2px var(--style1-border, #eee);
+    color: var(--style1-foreground-bold, #eee);
 }
 .wrapper.style1 input[type=submit]:hover,
 .wrapper.style1 input[type=reset]:hover,
 .wrapper.style1 input[type=button]:hover,
 .wrapper.style1 button:hover,
 .wrapper.style1 .button:hover {
-    background-color: var(--style1-border-background, #999);
+    background-color: var(--style1-border-background, #fff);
 }
 .wrapper.style1 input[type=submit]:active,
 .wrapper.style1 input[type=reset]:active,
 .wrapper.style1 input[type=button]:active,
 .wrapper.style1 button:active,
 .wrapper.style1 .button:active {
-    background-color: var(--style1-border2-background, #999);
+    background-color: var(--style1-border2-background, #fff);
 }
 @media screen and (max-width: 736px) {
     .wrapper.style1 .features li {
-        border-top-color: var(--style1-border, #999);
+        border-top-color: var(--style1-border, #eee);
     }
 }
 
 .wrapper.style2 {
-    background-color: var(--style2-background, #999);
-    color: var(--style2-foreground, #999);
+    background-color: var(--style2-background, #fff);
+    color: var(--style2-foreground, #eee);
 }
 .wrapper.style2 strong, .wrapper.style2 b {
-    color: var(--style2-foreground-bold, #999);
+    color: var(--style2-foreground-bold, #eee);
 }
 .wrapper.style2 h2, .wrapper.style2 h3, .wrapper.style2 h4, .wrapper.style2 h5, .wrapper.style2 h6 {
-    color: var(--style2-foreground-bold, #999);
+    color: var(--style2-foreground-bold, #eee);
 }
 .wrapper.style2 hr {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 blockquote {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 code {
-    background: var(--style2-border-background, #999);
+    background: var(--style2-border-background, #fff);
 }
 .wrapper.style2 header p {
-    color: var(--style2-foreground-light, #999);
+    color: var(--style2-foreground-light, #eee);
 }
 .wrapper.style2 header.major h2, .wrapper.style2 header.major h3, .wrapper.style2 header.major h4, .wrapper.style2 header.major h5, .wrapper.style2 header.major h6 {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 header.major p {
-    color: var(--style2-foreground, #999);
+    color: var(--style2-foreground, #eee);
+}
+.wrapper.style2 .features li:before {
+    color: var(--style2-border, #eee);
 }
 .wrapper.style2 label {
-    color: var(--style2-foreground-bold, #999);
+    color: var(--style2-foreground-bold, #eee);
 }
 .wrapper.style2 input[type=text],
 .wrapper.style2 input[type=password],
 .wrapper.style2 input[type=email],
 .wrapper.style2 select,
 .wrapper.style2 textarea {
-    background-color: var(--style2-border-background, #999);
+    background-color: var(--style2-border-background, #fff);
 }
 .wrapper.style2 select {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dd5' /%3E%3C/svg%3E");
 }
 .wrapper.style2 select option {
-    color: var(--style2-foreground-bold, #999);
-    background: var(--style2-background, #999);
+    color: var(--style2-foreground-bold, #eee);
+    background: var(--style2-background, #fff);
 }
 .wrapper.style2 input[type=checkbox] + label,
 .wrapper.style2 input[type=radio] + label {
-    color: var(--style2-foreground, #999);
+    color: var(--style2-foreground, #eee);
 }
 .wrapper.style2 input[type=checkbox] + label:before,
 .wrapper.style2 input[type=radio] + label:before {
-    background: var(--style2-border-background, #999);
+    background: var(--style2-border-background, #fff);
 }
 .wrapper.style2 input[type=checkbox]:checked + label:before,
 .wrapper.style2 input[type=radio]:checked + label:before {
-    background: var(--style2-foreground-bold, #999);
-    color: var(--style2-background, #999);
+    background: var(--style2-foreground-bold, #eee);
+    color: var(--style2-background, #fff);
 }
 .wrapper.style2 ::-webkit-input-placeholder {
-    color: var(--style2-foreground-light, #999) !important;
+    color: var(--style2-foreground-light, #eee) !important;
 }
 .wrapper.style2 :-moz-placeholder {
-    color: var(--style2-foreground-light, #999) !important;
+    color: var(--style2-foreground-light, #eee) !important;
 }
 .wrapper.style2 ::-moz-placeholder {
-    color: var(--style2-foreground-light, #999) !important;
+    color: var(--style2-foreground-light, #eee) !important;
 }
 .wrapper.style2 :-ms-input-placeholder {
-    color: var(--style2-foreground-light, #999) !important;
+    color: var(--style2-foreground-light, #eee) !important;
 }
 .wrapper.style2 .formerize-placeholder {
-    color: var(--style2-foreground-light, #999) !important;
+    color: var(--style2-foreground-light, #eee) !important;
 }
 .wrapper.style2 .icon.major {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 ul.alt li {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 table tbody tr {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 table tbody tr:nth-child(2n+1) {
-    background-color: var(--style2-border-background, #999);
+    background-color: var(--style2-border-background, #fff);
 }
 .wrapper.style2 table th {
-    color: var(--style2-foreground-bold, #999);
+    color: var(--style2-foreground-bold, #eee);
 }
 .wrapper.style2 table thead {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 table tfoot {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 table.alt tbody tr td {
-    border-color: var(--style2-border, #999);
+    border-color: var(--style2-border, #eee);
 }
 .wrapper.style2 input[type=submit],
 .wrapper.style2 input[type=reset],
 .wrapper.style2 input[type=button],
 .wrapper.style2 button,
 .wrapper.style2 .button {
-    box-shadow: inset 0 0 0 2px var(--style2-border, #999);
-    color: var(--style2-foreground-bold, #999);
+    box-shadow: inset 0 0 0 2px var(--style2-border, #eee);
+    color: var(--style2-foreground-bold, #eee);
 }
 .wrapper.style2 input[type=submit]:hover,
 .wrapper.style2 input[type=reset]:hover,
 .wrapper.style2 input[type=button]:hover,
 .wrapper.style2 button:hover,
 .wrapper.style2 .button:hover {
-    background-color: var(--style2-border-background, #999);
+    background-color: var(--style2-border-background, #fff);
 }
 .wrapper.style2 input[type=submit]:active,
 .wrapper.style2 input[type=reset]:active,
 .wrapper.style2 input[type=button]:active,
 .wrapper.style2 button:active,
 .wrapper.style2 .button:active {
-    background-color: var(--style2-border2-background, #999);
+    background-color: var(--style2-border2-background, #fff);
 }
 @media screen and (max-width: 736px) {
     .wrapper.style2 .features li {
-        border-top-color: var(--style2-border, #999);
+        border-top-color: var(--style2-border, #eee);
     }
 }
 
 .wrapper.style3 {
-    background-color: var(--style3-background, #999);
-    color: var(--style3-foreground, #999);
+    background-color: var(--style3-background, #fff);
+    color: var(--style3-foreground, #eee);
 }
 .wrapper.style3 strong, .wrapper.style3 b {
-    color: var(--style3-foreground-bold, #999);
+    color: var(--style3-foreground-bold, #eee);
 }
 .wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
-    color: var(--style3-foreground-bold, #999);
+    color: var(--style3-foreground-bold, #eee);
 }
 .wrapper.style3 hr {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 blockquote {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 code {
-    background: var(--style3-border-background, #999);
+    background: var(--style3-border-background, #fff);
 }
 .wrapper.style3 header p {
-    color: var(--style3-foreground-light, #999);
+    color: var(--style3-foreground-light, #eee);
 }
 .wrapper.style3 header.major h2, .wrapper.style3 header.major h3, .wrapper.style3 header.major h4, .wrapper.style3 header.major h5, .wrapper.style3 header.major h6 {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 header.major p {
-    color: var(--style3-foreground, #999);
+    color: var(--style3-foreground, #eee);
+}
+.wrapper.style3 .features li:before {
+    color: var(--style3-border, #eee);
 }
 .wrapper.style3 label {
-    color: var(--style3-foreground-bold, #999);
+    color: var(--style3-foreground-bold, #eee);
 }
 .wrapper.style3 input[type=text],
 .wrapper.style3 input[type=password],
 .wrapper.style3 input[type=email],
 .wrapper.style3 select,
 .wrapper.style3 textarea {
-    background-color: var(--style3-border-background, #999);
+    background-color: var(--style3-border-background, #fff);
 }
 .wrapper.style3 select {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23ff5' /%3E%3C/svg%3E");
 }
 .wrapper.style3 select option {
-    color: var(--style3-foreground-bold, #999);
-    background: var(--style3-background, #999);
+    color: var(--style3-foreground-bold, #eee);
+    background: var(--style3-background, #fff);
 }
 .wrapper.style3 input[type=checkbox] + label,
 .wrapper.style3 input[type=radio] + label {
-    color: var(--style3-foreground, #999);
+    color: var(--style3-foreground, #eee);
 }
 .wrapper.style3 input[type=checkbox] + label:before,
 .wrapper.style3 input[type=radio] + label:before {
-    background: var(--style3-border-background, #999);
+    background: var(--style3-border-background, #fff);
 }
 .wrapper.style3 input[type=checkbox]:checked + label:before,
 .wrapper.style3 input[type=radio]:checked + label:before {
-    background: var(--style3-foreground-bold, #999);
-    color: var(--style3-background, #999);
+    background: var(--style3-foreground-bold, #eee);
+    color: var(--style3-background, #fff);
 }
 .wrapper.style3 ::-webkit-input-placeholder {
-    color: var(--style3-foreground-light, #999) !important;
+    color: var(--style3-foreground-light, #eee) !important;
 }
 .wrapper.style3 :-moz-placeholder {
-    color: var(--style3-foreground-light, #999) !important;
+    color: var(--style3-foreground-light, #eee) !important;
 }
 .wrapper.style3 ::-moz-placeholder {
-    color: var(--style3-foreground-light, #999) !important;
+    color: var(--style3-foreground-light, #eee) !important;
 }
 .wrapper.style3 :-ms-input-placeholder {
-    color: var(--style3-foreground-light, #999) !important;
+    color: var(--style3-foreground-light, #eee) !important;
 }
 .wrapper.style3 .formerize-placeholder {
-    color: var(--style3-foreground-light, #999) !important;
+    color: var(--style3-foreground-light, #eee) !important;
 }
 .wrapper.style3 .icon.major {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 ul.alt li {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 table tbody tr {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 table tbody tr:nth-child(2n+1) {
-    background-color: var(--style3-border-background, #999);
+    background-color: var(--style3-border-background, #fff);
 }
 .wrapper.style3 table th {
-    color: var(--style3-foreground-bold, #999);
+    color: var(--style3-foreground-bold, #eee);
 }
 .wrapper.style3 table thead {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 table tfoot {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 table.alt tbody tr td {
-    border-color: var(--style3-border, #999);
+    border-color: var(--style3-border, #eee);
 }
 .wrapper.style3 input[type=submit],
 .wrapper.style3 input[type=reset],
 .wrapper.style3 input[type=button],
 .wrapper.style3 button,
 .wrapper.style3 .button {
-    box-shadow: inset 0 0 0 2px var(--style3-border, #999);
-    color: var(--style3-foreground-bold, #999);
+    box-shadow: inset 0 0 0 2px var(--style3-border, #eee);
+    color: var(--style3-foreground-bold, #eee);
 }
 .wrapper.style3 input[type=submit]:hover,
 .wrapper.style3 input[type=reset]:hover,
 .wrapper.style3 input[type=button]:hover,
 .wrapper.style3 button:hover,
 .wrapper.style3 .button:hover {
-    background-color: var(--style3-border-background, #999);
+    background-color: var(--style3-border-background, #fff);
 }
 .wrapper.style3 input[type=submit]:active,
 .wrapper.style3 input[type=reset]:active,
 .wrapper.style3 input[type=button]:active,
 .wrapper.style3 button:active,
 .wrapper.style3 .button:active {
-    background-color: var(--style3-border2-background, #999);
+    background-color: var(--style3-border2-background, #fff);
 }
 @media screen and (max-width: 736px) {
     .wrapper.style3 .features li {
-        border-top-color: var(--style3-border, #999);
+        border-top-color: var(--style3-border, #eee);
     }
 }
 @media screen and (max-width: 980px) {
@@ -2687,8 +2699,8 @@ button:disabled,
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     -webkit-overflow-scrolling: touch;
-    background: var(--style1-background, #999);
-    color: var(--style1-foreground-bold, #999);
+    background: var(--style1-background, #fff);
+    color: var(--style1-foreground-bold, #eee);
     height: 100%;
     max-width: 80%;
     overflow-y: auto;
@@ -2704,7 +2716,7 @@ button:disabled,
     padding: 0;
 }
 #menu ul > li {
-    border-top: solid 1px var(--style1-border, #999);
+    border-top: solid 1px var(--style1-border, #eee);
     margin: 0.5em 0 0 0;
     padding: 0.5em 0 0 0;
 }
@@ -2767,7 +2779,7 @@ body.is-menu-visible #menu {
     -webkit-transition: background-color 0.2s ease;
     -ms-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
-    background: var(--palette-background, #999);
+    background: var(--palette-background, #fff);
     height: 3em;
     left: 0;
     line-height: 3em;
@@ -2817,7 +2829,7 @@ body.is-menu-visible #menu {
 }
 #header nav > ul > li > a {
     border: 0;
-    color: var(--palette-foreground-bold, #999);
+    color: var(--palette-foreground-bold, #eee);
     display: block;
     font-size: 0.8em;
     letter-spacing: 0.225em;
@@ -2908,7 +2920,7 @@ body.is-menu-visible #menu {
     -webkit-transition-delay: 0.25s;
     -ms-transition-delay: 0.25s;
     transition-delay: 0.25s;
-    background: var(--palette-foreground-bold, #999);
+    background: var(--palette-foreground-bold, #eee);
     content: "";
     display: block;
     height: 2px;
@@ -2985,7 +2997,7 @@ body.is-menu-visible #menu {
     -ms-transition-delay: 1.25s;
     transition-delay: 1.25s;
     content: "";
-    background: var(--palette-background, #999);
+    background: var(--palette-background, #fff);
     display: block;
     width: 100%;
     height: 100%;
@@ -3154,20 +3166,20 @@ body.is-mobile #main > header {
 /* Footer */
 #footer {
     padding: 6em 0 4em 0;
-    background-color: black;
+    background-color: var(--footer-background, #000);
     text-align: center;
 }
 #footer .icons {
     font-size: 1.25em;
 }
 #footer .icons a {
-    color: var(--palette-foreground-light, #999);
+    color: var(--palette-foreground-light, #eee);
 }
 #footer .icons a:hover {
-    color: var(--palette-foreground, #999);
+    color: var(--palette-foreground, #eee);
 }
 #footer .copyright {
-    color: var(--palette-foreground-light, #999);
+    color: var(--palette-foreground-light, #eee);
     font-size: 0.8em;
     letter-spacing: 0.225em;
     list-style: none;
@@ -3175,7 +3187,7 @@ body.is-mobile #main > header {
     text-transform: uppercase;
 }
 #footer .copyright li {
-    border-left: solid 1px var(--palette-foreground-light, #999);
+    border-left: solid 1px var(--palette-foreground-light, #eee);
     display: inline-block;
     line-height: 1em;
     margin-left: 1em;
@@ -3190,7 +3202,7 @@ body.is-mobile #main > header {
     color: inherit;
 }
 #footer .copyright li a:hover {
-    color: var(--palette-foreground, #999);
+    color: var(--palette-foreground, #eee);
 }
 @media screen and (max-width: 480px) {
     #footer .copyright li {
@@ -3223,9 +3235,6 @@ body.landing #page-wrapper {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 0;
-}
-body.landing #footer {
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
 body.is-mobile.landing #page-wrapper {

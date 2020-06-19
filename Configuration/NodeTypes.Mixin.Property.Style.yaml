@@ -7,27 +7,38 @@
         style:
           label: Style
           icon: paint-brush
+          position: 100
       groups:
         palette:
           tab: style
           icon: paint-brush
           label: palette
+          collapsed: true
         button:
           tab: style
           icon: paint-brush
           label: Button
+          collapsed: true
+        footer:
+          tab: style
+          icon: paint-brush
+          label: Footer
+          collapsed: true
         style1:
           tab: style
           icon: paint-brush
           label: Style 1
+          collapsed: true
         style2:
           tab: style
           icon: paint-brush
           label: Style 2
+          collapsed: true
         style3:
           tab: style
           icon: paint-brush
           label: Style 3
+          collapsed: true
 
 
   properties:
@@ -35,6 +46,19 @@
       type: string
       ui:
         label: 'Background'
+        reloadIfChanged: true
+        inspector:
+          group: palette
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    paletteFgBold:
+      type: string
+      ui:
+        label: 'Foreground Bold'
         reloadIfChanged: true
         inspector:
           group: palette
@@ -57,6 +81,7 @@
             picker: true
             fields: true
             presetColors: []
+
     paletteBorder:
       type: string
       ui:
@@ -111,11 +136,37 @@
             fields: true
             presetColors: []
 
+    footerBg:
+      type: string
+      ui:
+        label: 'Footer Background'
+        reloadIfChanged: true
+        inspector:
+          group: footer
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
 
     style1Bg:
       type: string
       ui:
         label: 'Background'
+        reloadIfChanged: true
+        inspector:
+          group: style1
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+    style1FgBold:
+      type: string
+      ui:
+        label: 'Foreground Bold'
         reloadIfChanged: true
         inspector:
           group: style1
@@ -178,6 +229,19 @@
             picker: true
             fields: true
             presetColors: []
+    style2FgBold:
+      type: string
+      ui:
+        label: 'Foreground Bold'
+        reloadIfChanged: true
+        inspector:
+          group: style2
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
     style2Fg:
       type: string
       ui:
@@ -231,6 +295,19 @@
             picker: true
             fields: true
             presetColors: []
+    style3FgBold:
+      type: string
+      ui:
+        label: 'Foreground Bold'
+        reloadIfChanged: true
+        inspector:
+          group: style3
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
     style3Fg:
       type: string
       ui:
@@ -270,4 +347,3 @@
             picker: true
             fields: true
             presetColors: []
-
