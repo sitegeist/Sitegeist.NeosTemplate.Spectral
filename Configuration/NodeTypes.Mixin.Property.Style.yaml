@@ -1,0 +1,43 @@
+'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Icon':
+  abstract: true
+
+  ui:
+    inspector:
+      groups:
+        icon:
+          icon: 'icons'
+
+  properties:
+    icon:
+      type: string
+      defaultValue: 'flag'
+      ui:
+        label: 'Icon'
+        reloadIfChanged: true
+        inspector:
+          group: icon
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              code:
+                label: 'Code'
+              flag:
+                label: 'Flag'
+              headphones-alt:
+                label: 'Headphones'
+              heart:
+                label: 'Heart'
+              laptop:
+                label: 'Laptop'
+              paper-plane:
+                label: 'Paper'
+    solid:
+      type: boolean
+      defaultValue: true
+      ui:
+        label: 'Solid'
+        reloadIfChanged: true
+        inspector:
+          group: icon
+
+
