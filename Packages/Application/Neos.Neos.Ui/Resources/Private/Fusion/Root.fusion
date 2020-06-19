@@ -1,6 +1,0 @@
-include: Prototypes/*.fusion
-
-root {
-    # Catch all unhandled exceptions at the root
-    @exceptionHandler = 'Neos\\Neos\\Ui\\Fusion\\ExceptionHandler\\PageExceptionHandler'
-}

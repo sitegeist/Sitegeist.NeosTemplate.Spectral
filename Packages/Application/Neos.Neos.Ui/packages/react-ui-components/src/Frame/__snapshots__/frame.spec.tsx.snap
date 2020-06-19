@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Frame/> should render correctly. 1`] = `
-<iframe
-  onLoad={[Function]}
-/>
-`;

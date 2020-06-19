@@ -1,2 +1,0 @@
-Neos\Form\Persistence\FormPersistenceManagerInterface:
-  className: Neos\Form\Persistence\YamlPersistenceManager

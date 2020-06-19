@@ -1,4 +1,0 @@
-prototype(Neos.NodeTypes.AssetList:AssetList) < prototype(Neos.Neos:Content) {
-  templatePath = "resource://Neos.NodeTypes.AssetList/Private/Templates/NodeTypes/AssetList.html"
-  assets = ${q(node).property('assets')}
-}
