@@ -102,6 +102,7 @@ body, input, select, textarea {
     color: #0e0e0e;
     color: var(--palette-foreground, #eee);
     font-family: "Open Sans", Helvetica, sans-serif;
+    font-family: var(--body-font, Arial);
     font-size: 15pt;
     font-weight: 400;
     letter-spacing: 0.075em;

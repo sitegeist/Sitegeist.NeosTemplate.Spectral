@@ -39,10 +39,7 @@
                 label: 'style2'
               style3:
                 label: 'style3'
-              style4:
-                label: 'style4'
-              style5:
-                label: 'style5'
+
   options:
     template:
       childNodes:

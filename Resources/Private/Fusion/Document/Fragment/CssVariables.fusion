@@ -1,6 +1,10 @@
 prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prototype(Neos.Fusion:Component) {
 
     variables = Neos.Fusion:DataStructure {
+
+        body-font = ${q(site).property('bodyFont')}
+        palette-background.@if.isset =  ${q(site).property('bodyFont')}
+
         palette-background = ${q(site).property('paletteBg')}
         palette-background.@if.isset =  ${q(site).property('paletteBg')}
 

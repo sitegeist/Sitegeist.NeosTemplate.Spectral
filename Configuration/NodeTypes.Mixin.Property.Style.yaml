@@ -9,6 +9,11 @@
           icon: paint-brush
           position: 100
       groups:
+        fonts:
+          tab: style
+          icon: font
+          label: fonts
+          collapsed: true
         palette:
           tab: style
           icon: paint-brush
@@ -42,6 +47,24 @@
 
 
   properties:
+    bodyFont:
+      type: string
+      ui:
+        label: 'body font family'
+        reloadIfChanged: true
+        inspector:
+          group: fonts
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              'Arial, sans-serif':
+                label: 'Arial'
+              '"Courier New", monospace':
+                label: 'Courier New'
+              'Tahoma, sans-serif':
+                label: 'Tahoma'
+              '"Times New Roman", serif':
+                label: 'Times New Roman'
     paletteBg:
       type: string
       ui:
