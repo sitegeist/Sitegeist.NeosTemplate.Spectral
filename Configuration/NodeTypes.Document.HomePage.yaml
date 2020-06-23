@@ -2,6 +2,7 @@
   superTypes:
     'Sitegeist.NeosTemplate.Spectral:Constraint.Document.Restricted': true
     'Sitegeist.NeosTemplate.Spectral:Document.LandingPage': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Style': true
 
   ui:
     icon: globe
@@ -10,6 +11,7 @@
         footer:
           label: Footer Data
           icon: glass-whiskey
+
       groups:
         siteInfo:
           label: 'Site Info'
@@ -66,4 +68,6 @@
         inspector:
           group: social
           editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+
+
 

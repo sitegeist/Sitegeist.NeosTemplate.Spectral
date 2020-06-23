@@ -1,0 +1,5 @@
+Neos:
+
+  Fusion:
+    defaultContext:
+      'ColorEditor': 'Sitegeist\NeosTemplate\Spectral\Eel\Helper\ColorEditorHelper'

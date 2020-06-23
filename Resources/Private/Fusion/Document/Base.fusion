@@ -6,12 +6,17 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Base) < prototype(Neos.Fusion
 
         head {
             metaViewport = '<meta name="viewport" content="width=device-width">'
-            stylesheets = Neos.Fusion:Tag {
-                tagName = 'link'
-                attributes {
-                    rel = 'stylesheet'
-                    href = Neos.Fusion:ResourceUri {
-                        path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/css/main.css'
+            stylesheets = Neos.Fusion:Join {
+
+                cssVariables = Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables
+
+                main = Neos.Fusion:Tag {
+                    tagName = 'link'
+                    attributes {
+                        rel = 'stylesheet'
+                        href = Neos.Fusion:ResourceUri {
+                            path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/assets/css/main.css'
+                        }
                     }
                 }
             }
