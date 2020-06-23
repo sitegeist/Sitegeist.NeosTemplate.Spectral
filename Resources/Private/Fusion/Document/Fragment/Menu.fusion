@@ -21,6 +21,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Menu) < prototype(Ne
     }
 
     languageSelector = Neos.Fusion:DataStructure {
+        @if.hasLanguageDimension = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language')}
         currentLanguage = ${Configuration.setting('Neos.ContentRepository.contentDimensions.language.presets.' + Array.first(node.context.dimensions.language) + '.label')}
         items = Neos.Fusion:Map {
             items = Neos.Neos:DimensionsMenuItems {
@@ -42,7 +43,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Menu) < prototype(Ne
 
     renderer = afx`
         <div id="menu">
-            <ul class="language-navi">
+            <ul class="language-navi" @if.exists={props.languageSelector} >
                 <Neos.Fusion:Loop items={props.languageSelector.items} @children="itemRenderer">
                     <li>
                         <Neos.Fusion:Tag
