@@ -2173,6 +2173,10 @@ button:disabled,
     border-radius: 0;
     width: 40%;
 }
+.spotlight .spotlogo {
+    width: 150px;
+}
+
 .spotlight .image img {
     border-radius: 0;
     width: 100%;
@@ -2700,8 +2704,8 @@ button:disabled,
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     -webkit-overflow-scrolling: touch;
-    background: var(--style1-background, #fff);
-    color: var(--style1-foreground-bold, #eee);
+    background: var(--footer-background, #000);
+    color: var(--palette-foreground-light, #eee);
     height: 100%;
     max-width: 80%;
     overflow-y: auto;
@@ -2717,7 +2721,7 @@ button:disabled,
     padding: 0;
 }
 #menu ul > li {
-    border-top: solid 1px var(--style1-border, #eee);
+    border-top: solid 1px var(--palette-foreground-light, #eee);
     margin: 0.5em 0 0 0;
     padding: 0.5em 0 0 0;
 }
