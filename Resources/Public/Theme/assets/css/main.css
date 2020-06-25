@@ -133,6 +133,7 @@ a {
     border-bottom: dotted 1px;
     color: inherit;
     text-decoration: none;
+    outline: none;
 }
 a:hover {
     border-bottom-color: transparent;
