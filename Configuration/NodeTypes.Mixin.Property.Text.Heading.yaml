@@ -1,4 +1,4 @@
-'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading':
+'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Heading':
   abstract: true
 
   properties:

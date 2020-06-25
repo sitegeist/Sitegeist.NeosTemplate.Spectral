@@ -3,8 +3,8 @@
     'Sitegeist.NeosTemplate.Spectral:Content': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Plain': true
     'Neos.Neos:ContentCollection': true
     'Flownative.Anchorlinks:AnchorMixin': true
 

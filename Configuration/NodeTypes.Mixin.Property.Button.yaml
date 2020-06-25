@@ -1,4 +1,4 @@
-'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Button':
+'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Button':
   abstract: true
 
   ui:
