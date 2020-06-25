@@ -3,6 +3,7 @@
     'Sitegeist.NeosTemplate.Spectral:Content': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Style' : true
     'Neos.Neos:ContentCollection': true
     'Flownative.Anchorlinks:AnchorMixin': true
 
@@ -18,27 +19,6 @@
       groups:
         identifier:
           label: 'Identifier'
-        styles:
-          label: 'Appearance'
-
-  properties:
-
-    style:
-      type: string
-      ui:
-        label: 'style'
-        reloadIfChanged: true
-        inspector:
-          group: styles
-          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions:
-            values:
-              style1:
-                label: 'style1'
-              style2:
-                label: 'style2'
-              style3:
-                label: 'style3'
 
   options:
     template:

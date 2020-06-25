@@ -2,7 +2,7 @@
   superTypes:
     'Sitegeist.NeosTemplate.Spectral:Constraint.Document.Restricted': true
     'Sitegeist.NeosTemplate.Spectral:Document.LandingPage': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Style': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.HomeStyle': true
 
   ui:
     icon: globe
