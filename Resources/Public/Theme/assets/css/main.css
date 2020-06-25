@@ -1663,17 +1663,17 @@ input[type=radio] + label:before {
 }
 
 .icon {
-    color: var(--palette-background, #eee);
+    color: var(--palette-foreground, #eee);
 }
 
-.icon.style1 {
-    color: var(--style1-background, #eee);
+.style1 .icon {
+    color: var(--style1-foreground, #eee);
 }
-.icon.style2 {
-    color: var(--style2-background, #eee);
+.style2 .icon {
+    color: var(--style2-foreground, #eee);
 }
-.icon.style3 {
-    color: var(--style3-background, #eee);
+.style3 .icon {
+    color: var(--style3-foreground, #eee);
 }
 
 /* Image */

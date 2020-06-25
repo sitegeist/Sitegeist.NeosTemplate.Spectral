@@ -1,9 +1,9 @@
 'Sitegeist.NeosTemplate.Spectral:Content.FeaturesBlock.Feature':
   superTypes:
     'Sitegeist.NeosTemplate.Spectral:Content': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Icon': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Icon': true
 
   ui:
     label: 'Feature'
