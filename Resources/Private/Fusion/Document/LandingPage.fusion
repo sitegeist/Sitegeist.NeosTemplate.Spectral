@@ -10,7 +10,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage) < prototype(Neos
     renderer = Sitegeist.NeosTemplate.Spectral:Document.Base {
         renderer.bodyTag.attributes.class="landing is-preload"
         content = afx`
-            <div id="page-wrapper" style={"background-image:url(" + props.imageSource + ")"}>
+            <div id="page-wrapper">
                 <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Header />
                 {props.content}
             </div>
