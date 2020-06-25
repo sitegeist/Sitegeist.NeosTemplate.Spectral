@@ -1,4 +1,4 @@
-'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain':
+'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Plain':
   abstract: true
 
   properties:

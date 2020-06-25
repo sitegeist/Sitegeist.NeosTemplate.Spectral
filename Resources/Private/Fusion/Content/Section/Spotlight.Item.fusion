@@ -28,14 +28,35 @@ prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prot
 
     imageAlt = ${q(node).property('imageAlternativeText')}
 
+    spotLogo = Neos.Fusion:Case {
+        hasAsset {
+            condition = ${q(node).property('spotLogo')}
+            renderer = Neos.Neos:ImageUri {
+                asset = ${q(node).property('spotLogo')}
+            }
+        }
+
+        inBackend {
+            condition = ${node.context.inBackend}
+            renderer = Neos.Fusion:ResourceUri {
+                path = 'resource://Sitegeist.NeosTemplate.Spectral/Public/Theme/images/dummy_spotlight.jpg'
+            }
+        }
+    }
+
+    alignment = ${q(node).property('alignment')}
+
+
+
     renderer = afx`
-        <section class="spotlight">
+        <section class={'spotlight '+ props.alignment}>
             <div class="image">
                 <img src={props.imageSource} alt={props.imageAlt}/>
             </div>
             <div class="content">
                 <h2>{props.title}</h2>
                 <p>{props.text}</p>
+                <img  @if.isset={!String.isBlank(props.spotLogo)}  class="spotlogo" src={props.spotLogo} />
             </div>
         </section>
     `

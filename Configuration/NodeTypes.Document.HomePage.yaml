@@ -4,6 +4,7 @@
     'Sitegeist.NeosTemplate.Spectral:Document.LandingPage': true
     'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.HomeStyle': true
 
+
   ui:
     icon: globe
     inspector:

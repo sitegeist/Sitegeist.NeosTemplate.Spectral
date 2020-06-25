@@ -3,7 +3,13 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
     variables = Neos.Fusion:DataStructure {
 
         body-font = ${q(site).property('bodyFont')}
-        palette-background.@if.isset =  ${q(site).property('bodyFont')}
+        body-font.@if.isset =  ${q(site).property('bodyFont')}
+
+        landing-background = Neos.Neos:ImageUri {
+            asset = ${q(node).property('background')}
+        }
+        landing-background.@process.wrapInUrl = ${'url(' + value + ')'}
+        landing-background.@if.isset =  ${q(site).property('background')}
 
         palette-background = ${q(site).property('paletteBg')}
         palette-background.@if.isset =  ${q(site).property('paletteBg')}

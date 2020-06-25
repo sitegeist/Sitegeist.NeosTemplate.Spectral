@@ -16,7 +16,6 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Header) < prototype(
                 <ul>
                     <li class="special">
                         <a class="menuToggle" href="#menu">
-                            <span>Menu</span>
                         </a>
                     </li>
                 </ul>

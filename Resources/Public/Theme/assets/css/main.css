@@ -133,6 +133,7 @@ a {
     border-bottom: dotted 1px;
     color: inherit;
     text-decoration: none;
+    outline: none;
 }
 a:hover {
     border-bottom-color: transparent;
@@ -1663,17 +1664,17 @@ input[type=radio] + label:before {
 }
 
 .icon {
-    color: var(--palette-background, #eee);
+    color: var(--palette-foreground, #eee);
 }
 
-.icon.style1 {
-    color: var(--style1-background, #eee);
+.style1 .icon {
+    color: var(--style1-foreground, #eee);
 }
-.icon.style2 {
-    color: var(--style2-background, #eee);
+.style2 .icon {
+    color: var(--style2-foreground, #eee);
 }
-.icon.style3 {
-    color: var(--style3-background, #eee);
+.style3 .icon {
+    color: var(--style3-foreground, #eee);
 }
 
 /* Image */
@@ -2173,6 +2174,10 @@ button:disabled,
     border-radius: 0;
     width: 40%;
 }
+.spotlight .spotlogo {
+    width: 150px;
+}
+
 .spotlight .image img {
     border-radius: 0;
     width: 100%;
@@ -2700,8 +2705,8 @@ button:disabled,
     -ms-transition: -ms-transform 0.5s ease;
     transition: transform 0.5s ease;
     -webkit-overflow-scrolling: touch;
-    background: var(--style1-background, #fff);
-    color: var(--style1-foreground-bold, #eee);
+    background: var(--footer-background, #000);
+    color: var(--palette-foreground-light, #eee);
     height: 100%;
     max-width: 80%;
     overflow-y: auto;
@@ -2717,7 +2722,7 @@ button:disabled,
     padding: 0;
 }
 #menu ul > li {
-    border-top: solid 1px var(--style1-border, #eee);
+    border-top: solid 1px var(--palette-foreground-light, #eee);
     margin: 0.5em 0 0 0;
     padding: 0.5em 0 0 0;
 }
@@ -3231,6 +3236,7 @@ body.landing #page-wrapper {
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
     background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+    background-image: var(--landing-background);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3246,6 +3252,7 @@ body.is-mobile.landing .banner {
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
     background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
     background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+    background-image: var(--landing-background);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

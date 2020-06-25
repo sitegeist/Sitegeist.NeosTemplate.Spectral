@@ -2,11 +2,43 @@
   superTypes:
     'Sitegeist.NeosTemplate.Spectral:Content': true
     'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Image': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Plain': true
-    'Sitegeist.NeosTemplate.Spectral:Mixin.Peroperty.Text.Heading': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Heading': true
 
   ui:
     label: 'Spotlight Item'
     icon: first-order-alt
+    inspector:
+      groups:
+        text:
+          label: "Text"
+          icon: icon-bars
 
+  properties:
+    spotLogo:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Logo under the text'
+        reloadIfChanged: true
+        inspector:
+          group: media
+          editor: 'Neos.Neos/Inspector/Editors/ImageEditor'
+          editorOptions:
+            crop: true
 
+    alignment:
+      type: string
+      ui:
+        label: 'Text alignment'
+        reloadIfChanged: true
+        inspector:
+          group: text
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              'align-center':
+                label: 'center'
+              'align-left':
+                label: 'left'
+              'align-right':
+                label: 'right'
