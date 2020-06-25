@@ -3,6 +3,7 @@
     'Sitegeist.NeosTemplate.Spectral:Content': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Normal': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Style' : true
     'Flownative.Anchorlinks:AnchorMixin': true
 
   constraints:
@@ -14,11 +15,6 @@
     label: 'Content Section'
     icon: sign
 
-    inspector:
-      groups:
-        styles:
-          label: 'Appearance'
-
   properties:
 
     centerAligned:
@@ -28,23 +24,6 @@
         reloadIfChanged: true
         inspector:
           group: styles
-
-    style:
-      type: string
-      ui:
-        label: 'style'
-        reloadIfChanged: true
-        inspector:
-          group: styles
-          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions:
-            values:
-              style1:
-                label: 'style1'
-              style2:
-                label: 'style2'
-              style3:
-                label: 'style3'
 
   options:
     template:

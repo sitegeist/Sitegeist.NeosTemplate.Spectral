@@ -5,6 +5,8 @@
     'Sitegeist.NeosTemplate.Spectral:Constraint.Content.Landing': true
     'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Heading': true
     'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Text.Plain': true
+    'Sitegeist.NeosTemplate.Spectral:Mixin.Property.Style' : true
+
     'Neos.Neos:ContentCollection': true
     'Flownative.Anchorlinks:AnchorMixin': true
 
@@ -16,29 +18,6 @@
   ui:
     label: 'CTA Section'
     icon: bullhorn
-    inspector:
-      groups:
-        styles:
-          label: 'Appearance'
-
-  properties:
-
-    style:
-      type: string
-      ui:
-        label: 'style'
-        reloadIfChanged: true
-        inspector:
-          group: styles
-          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
-          editorOptions:
-            values:
-              style1:
-                label: 'style1'
-              style2:
-                label: 'style2'
-              style3:
-                label: 'style3'
 
   options:
     template:
