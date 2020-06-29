@@ -17,7 +17,8 @@
           group: media
           editor: 'Neos.Neos/Inspector/Editors/ImageEditor'
           editorOptions:
-            crop: true
+            features:
+              crop: true
 
     imageAlternativeText:
       type: string
