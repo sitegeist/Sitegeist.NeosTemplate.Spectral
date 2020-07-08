@@ -61,4 +61,4 @@
               table: true
               ol: true
               ul: true
-              a: false
+              a: true
