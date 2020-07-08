@@ -173,6 +173,20 @@
             fields: true
             presetColors: []
 
+    footerFg:
+      type: string
+      ui:
+        label: 'Footer Foreground'
+        reloadIfChanged: true
+        inspector:
+          group: footer
+          editor: 'Shel.Neos.ColorPicker/ColorPickerEditor'
+          editorOptions:
+            mode: 'hsla'
+            picker: true
+            fields: true
+            presetColors: []
+
     style1Bg:
       type: string
       ui:
