@@ -37,9 +37,26 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Footer) < prototype(
             @if.has = ${q(site).property('emailUri')}
         }
     }
+    navigation = Neos.Fusion:Map {
+            items = Neos.Neos:MenuItems {
+                startingPoint = ${q(site).children('footeritems').get(0)}
+                maximumLevels = 1
+            }
+            itemRenderer = Neos.Fusion:DataStructure {
+                label = ${item.label}
+                href = Neos.Neos:NodeUri {
+                    node = ${item.node}
+                }
+            }
+        }
 
     renderer = afx`
         <footer id="footer">
+            <ul class="navi">
+                <Neos.Fusion:Loop items={props.navigation} @children="itemRenderer">
+                    <li><a href={item.href} >{item.label}</a></li>
+                </Neos.Fusion:Loop>
+            </ul>
             <ul class="icons">
                 <Neos.Fusion:Loop  items={props.socialMedia} @children="itemRenderer">
                     <li><a href={item.href} class={'icon ' + item.class}><span class="label">{item.label}</span></a></li>                   

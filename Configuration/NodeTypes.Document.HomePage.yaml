@@ -4,6 +4,9 @@
     'Sitegeist.NeosTemplate.Spectral:Document.LandingPage': true
     'Sitegeist.NeosTemplate.Spectral:Mixin.Property.HomeStyle': true
 
+  childNodes:
+    footerItems:
+      type: Sitegeist.NeosTemplate.Spectral:Document.FooterNavi
 
   ui:
     icon: globe

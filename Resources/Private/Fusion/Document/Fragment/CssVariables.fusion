@@ -38,6 +38,9 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.CssVariables) < prot
         footer-background = ${q(site).property('footerBg')}
         footer-background.@if.isset =  ${q(site).property('footerBg')}
 
+        footer-foreground = ${q(site).property('footerFg')}
+        footer-foreground.@if.isset =  ${q(site).property('footerFg')}
+
         style1-background = ${q(site).property('style1Bg')}
         style1-background.@if.isset =  ${q(site).property('style1Bg')}
 
