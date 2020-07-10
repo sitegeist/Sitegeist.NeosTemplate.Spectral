@@ -13,6 +13,9 @@
         text:
           label: "Text"
           icon: icon-bars
+        anchor:
+          label: 'Anchor'
+          icon: icon-link
 
   properties:
     spotLogo:
@@ -42,3 +45,20 @@
                 label: 'left'
               'align-right':
                 label: 'right'
+
+    link:
+      type: string
+      ui:
+        label: 'Linked to:'
+        inspector:
+          group: anchor
+          editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
+
+    target:
+      type: boolean
+      ui:
+        label: 'Open In New window'
+        inspector:
+          group: anchor
+
+

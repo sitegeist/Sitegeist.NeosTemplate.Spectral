@@ -44,6 +44,12 @@ prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prot
         }
     }
 
+    href = ${q(node).property('link')}
+    href.@if.inBackend = ${node.context.live}
+    href.@process.convertUris = Neos.Neos:ConvertUris
+
+    target = ${q(node).property('target')}
+
     alignment = ${q(node).property('alignment')}
 
 
@@ -60,4 +66,12 @@ prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prot
             </div>
         </section>
     `
+    renderer.@process.wrapInAnchor = Neos.Fusion:Tag {
+        tagName = 'a'
+        attributes.href = ${props.href}
+        attributes.target = '_blank'
+        attributes.target.@if.ifChecked = ${props.targetgi}
+        content = ${value}
+        @if.hasAnchor = ${props.href}
+    }
 }
