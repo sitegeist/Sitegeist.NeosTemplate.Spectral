@@ -3,18 +3,13 @@
     'Sitegeist.NeosTemplate.Spectral:Document.Shortcut': true
     'Sitegeist.NeosTemplate.Spectral:Constraint.Document.Restricted': true
 
-  constraints:
-    nodeTypes:
-      'Sitegeist.NeosTemplate.Spectral:Document': false
-      'Sitegeist.NeosTemplate.Spectral:Document.Shortcut': true
-
   ui:
     icon: glass-whiskey
 
   properties:
 
     title:
-      defaultValue: 'Navigation'
+      defaultValue: 'Footer Navigation'
 
     targetMode:
       defaultValue: 'parentNode'
