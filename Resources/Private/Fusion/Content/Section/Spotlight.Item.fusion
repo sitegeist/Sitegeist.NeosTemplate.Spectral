@@ -52,8 +52,6 @@ prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prot
 
     alignment = ${q(node).property('alignment')}
 
-
-
     renderer = afx`
         <section class={'spotlight '+ props.alignment}>
             <div class="image">
@@ -64,14 +62,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prot
                 <p>{props.text}</p>
                 <img  @if.isset={!String.isBlank(props.spotLogo)}  class="spotlogo" src={props.spotLogo} />
             </div>
+            <a class="spotlink" href={props.href} @if.has={props.href} target="_blank" target.@if.ifChecked={props.target}></a>
         </section>
     `
-    renderer.@process.wrapInAnchor = Neos.Fusion:Tag {
-        tagName = 'a'
-        attributes.href = ${props.href}
-        attributes.target = '_blank'
-        attributes.target.@if.ifChecked = ${props.targetgi}
-        content = ${value}
-        @if.hasAnchor = ${props.href}
-    }
 }
