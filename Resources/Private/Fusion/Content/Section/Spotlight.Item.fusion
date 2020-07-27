@@ -48,7 +48,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Content.Section.Spotlight.Item) < prot
     href.@if.inBackend = ${node.context.live}
     href.@process.convertUris = Neos.Neos:ConvertUris
 
-    target = ${q(node).property('target')}
+    target = ${q(node).property('linkTarget')}
 
     alignment = ${q(node).property('alignment')}
 

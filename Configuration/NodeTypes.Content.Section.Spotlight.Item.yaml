@@ -54,7 +54,7 @@
           group: anchor
           editor: 'Neos.Neos/Inspector/Editors/LinkEditor'
 
-    target:
+    linkTarget:
       type: boolean
       ui:
         label: 'Open In New window'
