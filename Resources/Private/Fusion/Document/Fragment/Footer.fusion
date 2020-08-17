@@ -33,7 +33,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.Fragment.Footer) < prototype(
         40 = Neos.Fusion:RawArray {
             label = 'Email'
             class = 'fa-envelope'
-            href = ${q(site).property('emailUri')}
+            href = ${'malito:' + q(site).property('emailUri')}
             @if.has = ${q(site).property('emailUri')}
         }
     }
