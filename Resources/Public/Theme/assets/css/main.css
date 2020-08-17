@@ -2172,6 +2172,9 @@ button:disabled,
     width: 100%;
     height: 100%;
     z-index: 999;
+    top: 0;
+    bottom: 0;
+    border: 0;
 }
 .spotlight .image {
     -moz-order: 1;
