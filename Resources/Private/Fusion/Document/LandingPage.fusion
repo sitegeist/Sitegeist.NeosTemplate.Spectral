@@ -1,4 +1,4 @@
-prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage) < prototype(Neos.Fusion:Component){
+prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage) < prototype(Neos.Fusion:Component) {
     content = Neos.Neos:ContentCollection {
         nodePath='main'
     }
@@ -8,7 +8,7 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage) < prototype(Neos
     }
 
     renderer = Sitegeist.NeosTemplate.Spectral:Document.Base {
-        renderer.bodyTag.attributes.class="landing is-preload"
+        renderer.bodyTag.attributes.class = "landing is-preload"
         content = afx`
             <div id="page-wrapper">
                 <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Header />
@@ -17,4 +17,5 @@ prototype(Sitegeist.NeosTemplate.Spectral:Document.LandingPage) < prototype(Neos
             <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Footer />
             <Sitegeist.NeosTemplate.Spectral:Document.Fragment.Menu />
         `
+    }
 }
